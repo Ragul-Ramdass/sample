@@ -1,0 +1,538 @@
+ragul_r@DESKTOP-CSI671E:~$ sudo su
+[sudo] password for ragul_r:
+root@DESKTOP-CSI671E:/home/ragul_r# ls -lrt
+total 140
+drwxr-xr-x 1 root    root     4096 Feb 22 17:12 tiger
+-rw-r--r-- 1 root    root       12 Feb 22 17:15 file.txt
+-rw-r--r-- 1 root    root       18 Feb 22 17:37 line.txt
+drwxr-xr-x 1 root    root     4096 Feb 22 18:20 folder1
+-rw-r--r-- 1 root    root    65220 Feb 22 18:37 my_unix_session.txt
+drwxr-xr-x 1 ragul_r ragul_r  4096 Feb 22 19:13 repository
+-rw-r--r-- 1 ragul_r ragul_r 75550 Feb 22 19:49 my_git_session
+root@DESKTOP-CSI671E:/home/ragul_r# cd /mnt
+root@DESKTOP-CSI671E:/mnt# ls
+c  d  f
+root@DESKTOP-CSI671E:/mnt# ls
+c  d  f
+root@DESKTOP-CSI671E:/mnt# cd c
+root@DESKTOP-CSI671E:/mnt/c# ls
+ls: cannot access 'DumpStack.log.tmp': Permission denied
+ls: cannot access 'hiberfil.sys': Permission denied
+ls: cannot access 'pagefile.sys': Permission denied
+ls: cannot access 'swapfile.sys': Permission denied
+'$Recycle.Bin'             Intel         'Program Files'               Users          pagefile.sys
+'$WinREAgent'              Java          'Program Files (x86)'         Windows        qemu-img-win-x64-2_3_0
+'Documents and Settings'   MSOCache       ProgramData                  hadoop-2.8.0   swapfile.sys
+ DumpStack.log.tmp         OneDriveTemp   Recovery                     hiberfil.sys   tmp
+ Hadoop                    PerfLogs      'System Volume Information'   msys64         xampp
+root@DESKTOP-CSI671E:/mnt/c# ls Users
+'All Users'   Default  'Default User'   GOKUL   Public   desktop.ini
+root@DESKTOP-CSI671E:/mnt/c# cd C:\Users\GOKUL\Downloads
+bash: cd: C:UsersGOKULDownloads: No such file or directory
+root@DESKTOP-CSI671E:/mnt/c# cd Users\GOKUL\Downloads
+bash: cd: UsersGOKULDownloads: No such file or directory
+root@DESKTOP-CSI671E:/mnt/c# cd Users
+root@DESKTOP-CSI671E:/mnt/c/Users# cd GOKUL
+root@DESKTOP-CSI671E:/mnt/c/Users/GOKUL# cd Downloads
+root@DESKTOP-CSI671E:/mnt/c/Users/GOKUL/Downloads# ls
+ 1038799574-1571.pdf
+ 1038799574-1988.pdf
+ 1614940377955.pdf
+ 1635769222021.jpg
+'1639411401382 (1).pdf'
+ 1639411401382.pdf
+'1807009 - Macro processes.docx'
+'1807037 google.docx'
+'1807042-10th marksheet.pdf'
+'1807042-12th marksheet.pdf'
+'1807042-Application for Employment_Full Time.pdf'
+ 1807042-aadhar.pdf
+ 1807042-sem1.pdf
+ 1807042-sem2.pdf
+ 1807042-sem3.pdf
+ 1807042-sem4.pdf
+ 1807042-sem5.pdf
+'1807042_RAGUL R.pdf'
+ 1807042_Ragul.pdf
+ 1807042_id-back.pdf
+ 1807042_id-front.pdf
+'1807048-assign 4.docx'
+'1807053 - CRM - Business case using CRM Tool.docx'
+ 1807060_exp10.docx
+ 1807060_exp6a.docx
+ 1807060_exp6b.docx
+ 1807060exp2.docx
+ 2.1.00947641.30112021.pdf
+'2497271_ahixxxxx0n_A1 (1).pdf'
+ 2497271_ahixxxxx0n_A1.pdf
+ 3.13.+Confidence+intervals.+Two+means.+Dependent+samples_exercise.xlsx
+ 37C8B460
+ 4E2AD460
+ 58C2E460
+'766- LIC RECEIPT (1).pdf'
+'766- LIC RECEIPT.pdf'
+ APP_8400001_TXN_223595867_TMPLT_8400004.pdf
+'Advanced Excel V3.0.xlsx'
+'Agni Paravai By Muthulakshmi Raghavan.pdf'
+ Anaconda3-2021.05-Windows-x86_64.exe
+ AnyDesk.exe
+ BD6DE460
+ CBCBE0021569000_10693621_2021090444256849645.pdf
+ CBCBE0021569000_9959609_2021062483409390937.pdf
+ CONSOLIDATED_PREMIUM_PAID_STMT_2021-2022.pdf
+ CT20213642288_Application.pdf
+ Cisco_WebEx_Add-On.exe
+ Documents-merged.pdf
+ EXAM-TIME-TABLE-FOR-2022.pdf
+ ExitedMember.csv
+'FINAL DOCUMENTATION .docx'
+'F_B Market Analysis.pdf'
+ GitHubDesktopSetup-x64.exe
+ Gokul_Prasad_R_CV.pdf
+ GoogleCloudSDKInstaller.exe
+ IBALauncher.exe
+'IMG_20211128_184204__01 (1).jpg'
+'IMG_20211128_184204__01-min (1).jpg'
+ IMG_20211128_184204__01-min.jpg
+ IOT_CODE.ino
+ InvestorTransactionsReport.xlsx
+ LIC-4178-19.9.21.pdf
+ LIC-4178-receipt.pdf
+ LIC-4178.pdf
+ LIC-766-16.11.21.pdf
+ LIC1887-13.12.2021.pdf
+ MBSetup.exe
+ MSB.exe
+ Mainproject.pptx
+'Malarnthu malaramal By Muthulakshmi Raghavan.pdf'
+ Miniconda3-latest-Linux-x86_64.sh
+'Miniproject Review.pptx'
+'Music classification based on lyrics and audio.pdf'
+'PROFORMA II (21 COLUMNS) 2013-14 to  2020-21.xlsx'
+ PacketTracer800_Build212_64bit_setup-signed.exe
+'Payment Status.pdf'
+ Pdf_490341900110921.pdf
+'Pictures - Shortcut.lnk'
+ Pipeline+Master+Project+Brief.pdf
+'Placement Feedback.docx'
+'Premium receipts (1).pdf'
+'Premium receipts (2).pdf'
+'Premium receipts (3).pdf'
+'Premium receipts.pdf'
+'Privacy policy-1.docx'
+'Privacy policy-2.docx'
+'Privacy policy-3.docx'
+ R-4.1.2-win.exe
+ R-Course-HTML-Notes.zip
+ RStudio-2021.09.1-372.exe
+'Ragul R Internship Letter-draft.pdf'
+'Ragul R Internship Letter.pdf'
+ Ragul-pan.pdf
+ Registration-tcs.pdf
+'Review1 (1).pptx'
+ Review1.pptx
+ ServiceRules.pdf
+'Takeaway Assignment -Python (2).zip'
+'Telegram Desktop'
+ VMware-VMvisor-Installer-7.0U2a-17867351.x86_64.iso
+ VMware-player-16.1.2-17966106.exe
+ VMware-viclient-all-6.0.0-2502222.exe
+ VSCodeSetup-x64-1.57.1.exe
+'Vinitha 15G.pdf'
+'Vinitha Pass Book.jpg'
+ VirtualBox-6.1.22-144080-Win.exe
+ WhatsAppSetup.exe
+ WinRAR_5.60_Final_x64.exe
+ _Getintopc.com_Microsoft_Office_2016_Pro_Plusx64
+ _Getintopc.com_Microsoft_Office_2016_Pro_Plusx64.rar
+ _Getintopc.com_Revo_Uninstaller_Pro_4.3.3_Multilingual
+ _Getintopc.com_Revo_Uninstaller_Pro_4.3.3_Multilingual.rar
+ _Getintopc.com_m-vmvsp6.iso
+ aadhar-back.pdf
+ aadhar-front.pdf
+ archive.zip
+ ccsetup582.exe
+ code.txt
+ desktop.ini
+ downloadECRExcel.xls
+ eclipse-inst-jre-win64.exe
+ filmora-idco_setup_full1901.exe
+ genc-reg.pdf
+ haarcascade_frontalface_default.xml
+ jdk-8u291-windows-x64.exe
+'lic receipt (1).pdf'
+'lic receipt.pdf'
+'lic-1887 (1).pdf'
+ lic-1887.pdf
+ mc-sem.pdf
+ mcsem.pdf
+ msys2-x86_64-20210604.exe
+ mysql-installer-community-8.0.27.1.msi
+ officialkmspico.com-KMSpico_setup
+ officialkmspico.com-KMSpico_setup.zip
+ opennebula_ubuntu.qcow2
+ openubuntu.vdi
+ photo.jpg
+ qemu-w64-setup-20211201.exe
+ ragul-passport.pdf
+ signature.jpg
+'springer paper.docx'
+ sqlite-tools-win32-x86-3350500.zip
+ sqlitestudio-3.3.3.zip
+ summary.pdf
+ temp.pdf
+ tsetup-x64.2.8.1.exe
+ ubuntu-20.04.2.0-desktop-amd64.iso
+ updates.txt
+ xampp-windows-x64-8.0.7-0-VS16-installer.exe
+root@DESKTOP-CSI671E:/mnt/c/Users/GOKUL/Downloads# bash Miniconda3-latest-Linux-x86_64.sh
+
+Welcome to Miniconda3 py39_4.11.0
+
+In order to continue the installation process, please review the license
+agreement.
+Please, press ENTER to continue
+>>>
+===================================
+End User License Agreement - Miniconda
+===================================
+
+Copyright 2015-2021, Anaconda, Inc.
+
+All rights reserved under the 3-clause BSD License:
+
+This End User License Agreement (the "Agreement") is a legal agreement between you and Anaconda, Inc. ("Anaconda") and g
+overns your use of Miniconda.
+
+Subject to the terms of this Agreement, Anaconda hereby grants you a non-exclusive, non-transferable license to:
+
+  * Install and use the Miniconda.
+  * Modify and create derivative works of sample source code delivered in Miniconda subject to the Terms of Service for
+the Repository (as defined hereinafter) available at https://www.anaconda.com/terms-of-service, and
+
+  * Redistribute code files in source (if provided to you by Anaconda as source) and binary forms, with or without modif
+ication subject to the requirements set forth below.
+
+Anaconda may, at its option, make available patches, workarounds or other updates to Miniconda. Unless the updates are p
+rovided with their separate governing terms, they are deemed part of Miniconda licensed to you as provided in this Agree
+ment. This Agreement does not entitle you to any support for Miniconda.
+
+Anaconda reserves all rights not expressly granted to you in this Agreement.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the followi
+ng conditions are met:
+
+  * Redistributions of source code must retain the above copyright notice, this list of conditions and the following dis
+claimer.
+  * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following
+disclaimer in the documentation and/or other materials provided with the distribution.
+  * Neither the name of Anaconda nor the names of its contributors may be used to endorse or promote products derived fr
+om this software without specific prior written permission.
+  * The purpose of the redistribution is not part of a commercial product for resale. Please contact the Anaconda team f
+or a third party redistribution commercial license.
+  * Commercial usage of the repository is non-compliant with our Terms of Service . Please contact us to learn more abou
+t our commercial offerings.
+
+You acknowledge that, as between you and Anaconda, Anaconda owns all right, title, and interest, including all intellect
+ual property rights, in and to Miniconda and, with respect to third-party products distributed with or through Miniconda
+, the applicable third-party licensors own all right, title and interest, including all intellectual property rights, in
+ and to such products. If you send or transmit any communications or materials to Anaconda suggesting or recommending ch
+anges to the software or documentation, including without limitation, new features or functionality relating thereto, or
+ any comments, questions, suggestions or the like ("Feedback"), Anaconda is free to use such Feedback. You hereby assign
+ to Anaconda all right, title, and interest in, and Anaconda is free to use, without any attribution or compensation to
+any party, any ideas, know-how, concepts, techniques or other intellectual property rights contained in the Feedback, fo
+r any purpose whatsoever, although Anaconda is not required to use any Feedback.
+
+DISCLAIMER
+==========
+
+THIS SOFTWARE IS PROVIDED BY ANACONDA AND ITS CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT
+ NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EV
+ENT SHALL ANACONDA BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDI
+NG, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUP
+TION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENC
+E OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, ANACONDA AND ITS AFFILIATES SHALL NOT BE LIABLE FOR ANY SPECIAL, INCIDENTAL, PUN
+ITIVE OR CONSEQUENTIAL DAMAGES, OR ANY LOST PROFITS, LOSS OF USE, LOSS OF DATA OR LOSS OF GOODWILL, OR THE COSTS OF PROC
+URING SUBSTITUTE PRODUCTS, ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT OR THE USE OR PERFORMANCE OF ANACONDA IND
+IVIDUAL EDITION, WHETHER SUCH LIABILITY ARISES FROM ANY CLAIM BASED UPON BREACH OF CONTRACT, BREACH OF WARRANTY, TORT (I
+NCLUDING NEGLIGENCE), PRODUCT LIABILITY OR ANY OTHER CAUSE OF ACTION OR THEORY OF LIABILITY. IN NO EVENT WILL THE TOTAL
+CUMULATIVE LIABILITY OF ANACONDA AND ITS AFFILIATES UNDER OR ARISING OUT OF THIS AGREEMENT EXCEED US0.00.
+
+Miscellaneous
+=============
+
+If you want to terminate this Agreement, you may do so by discontinuing use of Miniconda. Anaconda may, at any time, ter
+minate this Agreement and the license granted hereunder if you fail to comply with any term of this Agreement. Upon any
+termination of this Agreement, you agree to promptly discontinue use of the Miniconda and destroy all copies in your pos
+session or control. Upon any termination of this Agreement all provisions survive except for the licenses granted to you
+.
+
+This Agreement is governed by and construed in accordance with the internal laws of the State of Texas without giving ef
+fect to any choice or conflict of law provision or rule that would require or permit the application of the laws of any
+jurisdiction other than those of the State of Texas. Any legal suit, action, or proceeding arising out of or related to
+this Agreement or the licenses granted hereunder by you must be instituted exclusively in the federal courts of the Unit
+ed States or the courts of the State of Texas in each case located in Travis County, Texas, and you irrevocably submit t
+o the jurisdiction of such courts in any such suit, action, or proceeding.
+
+Notice of Third Party Software Licenses
+=======================================
+
+Miniconda provides access to a repository (the "Repository") which contains software packages or tools licensed on an op
+en source basis from third parties and binary packages of these third party tools. These third party software packages o
+r tools are provided on an "as is" basis and are subject to their respective license agreements as well as this Agreemen
+t and the Terms of Service for the Repository located at https://www.anaconda.com/terms-of-service; provided, however, n
+o restriction contained in the Terms of Service shall be construed so as to limit Your ability to download the packages
+contained in Miniconda provided you comply with the license for each such package. These licenses may be accessed from w
+ithin the Miniconda software[1]  or https://www.anaconda.com/legal. Information regarding which license is applicable is
+ available from within many of the third party software packages and tools and athttps://repo.anaconda.com/pkgs/main/ an
+dhttps://repo.anaconda.com/pkgs/r/. Anaconda reserves the right, in its sole discretion, to change which third party too
+ls are included in the Repository accessible through Miniconda.
+
+
+Intel Math Kernel Library
+-------------------------
+
+Miniconda provides access to re-distributable, run-time, shared-library files from the Intel Math Kernel Library ("MKL b
+inaries").
+
+Copyright 2018 Intel Corporation. License available at https://software.intel.com/en-us/license/intel-simplified-softwar
+e-license (the "MKL License").
+
+You may use and redistribute the MKL binaries, without modification, provided the following conditions are met:
+
+  * Redistributions must reproduce the above copyright notice and the following terms of use in the MKL binaries and in
+the documentation and/or other materials provided with the distribution.
+  * Neither the name of Intel nor the names of its suppliers may be used to endorse or promote products derived from the
+ MKL binaries without specific prior written permission.
+  * No reverse engineering, decompilation, or disassembly of the MKL binaries is permitted.
+
+You are specifically authorized to use and redistribute the MKL binaries with your installation of Miniconda subject to
+the terms set forth in the MKL License. You are also authorized to redistribute the MKL binaries with Miniconda or in th
+e Anaconda package that contains the MKL binaries. If needed, instructions for removing the MKL binaries after installat
+ion of Miniconda are available at https://docs.anaconda.com.
+
+cuDNN Software
+--------------
+
+Miniconda also provides access to cuDNN software binaries ("cuDNN binaries") from NVIDIA Corporation. You are specifical
+ly authorized to use the cuDNN binaries with your installation of Miniconda subject to your compliance with the license
+agreement located at https://docs.nvidia.com/deeplearning/sdk/cudnn-sla/index.html. You are also authorized to redistrib
+ute the cuDNN binaries with an Miniconda package that contains the cuDNN binaries. You can add or remove the cuDNN binar
+ies utilizing the install and uninstall features in Miniconda.
+
+cuDNN binaries contain source code provided by NVIDIA Corporation.
+
+Arm Performance Libraries
+-------------------------
+
+Arm Performance Libraries (Free Version): Anaconda provides access to software and related documentation from the Arm Pe
+rformance Libraries ("Arm PL") provided by Arm Limited. By installing or otherwise accessing the Arm PL, you acknowledge
+ and agree that use and distribution of the Arm PL is subject to your compliance with the Arm PL end user license agreem
+ent located at: https://developer.arm.com/tools-and-software/server-and-hpc/downloads/arm-performance-libraries/eula.
+
+Export; Cryptography Notice
+===========================
+
+You must comply with all domestic and international export laws and regulations that apply to the software, which includ
+e restrictions on destinations, end users, and end use. Miniconda includes cryptographic software. The country in which
+you currently reside may have restrictions on the import, possession, use, and/or re-export to another country, of encry
+ption software. BEFORE using any encryption software, please check your country's laws, regulations and policies concern
+ing the import, possession, or use, and re-export of encryption software, to see if this is permitted. See the Wassenaar
+ Arrangement http://www.wassenaar.org/ for more information.
+
+Anaconda has self-classified this software as Export Commodity Control Number (ECCN) 5D992.c, which includes mass market
+ information security software using or performing cryptographic functions with asymmetric algorithms. No license is req
+uired for export of this software to non-embargoed countries.
+
+The Intel Math Kernel Library contained in Miniconda is classified by Intel as ECCN 5D992.c with no license required for
+ export to non-embargoed countries.
+
+The following packages listed on https://www.anaconda.com/cryptography are included in the repository accessible through
+ Miniconda that relate to cryptography.
+
+Last updated June 24, 2021
+
+
+Do you accept the license terms? [yes|no]
+[no] >>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>>
+Please answer 'yes' or 'no':'
+>>> yes
+
+Miniconda3 will now be installed into this location:
+/root/miniconda3
+
+  - Press ENTER to confirm the location
+  - Press CTRL-C to abort the installation
+  - Or specify a different location below
+
+[/root/miniconda3] >>>
+PREFIX=/root/miniconda3
+Unpacking payload ...
+Extracting : libstdcxx-ng-9.3.0-hd4cf53a_17.conda:  38%|████████████▎                   | 15/39 [04:37<08:59, 22.48s/it]^[[C^[[CCollecting package metadata (current_repodata.jsodone
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /root/miniconda3
+
+  added / updated specs:
+    - _libgcc_mutex==0.1=main
+    - _openmp_mutex==4.5=1_gnu
+    - brotlipy==0.7.0=py39h27cfd23_1003
+    - ca-certificates==2021.10.26=h06a4308_2
+    - certifi==2021.10.8=py39h06a4308_2
+    - cffi==1.15.0=py39hd667e15_1
+    - charset-normalizer==2.0.4=pyhd3eb1b0_0
+    - conda-content-trust==0.1.1=pyhd3eb1b0_0
+    - conda-package-handling==1.7.3=py39h27cfd23_1
+    - conda==4.11.0=py39h06a4308_0
+    - cryptography==36.0.0=py39h9ce1e76_0
+    - idna==3.3=pyhd3eb1b0_0
+    - ld_impl_linux-64==2.35.1=h7274673_9
+    - libffi==3.3=he6710b0_2
+    - libgcc-ng==9.3.0=h5101ec6_17
+    - libgomp==9.3.0=h5101ec6_17
+    - libstdcxx-ng==9.3.0=hd4cf53a_17
+    - ncurses==6.3=h7f8727e_2
+    - openssl==1.1.1m=h7f8727e_0
+    - pip==21.2.4=py39h06a4308_0
+    - pycosat==0.6.3=py39h27cfd23_0
+    - pycparser==2.21=pyhd3eb1b0_0
+    - pyopenssl==21.0.0=pyhd3eb1b0_1
+    - pysocks==1.7.1=py39h06a4308_0
+    - python==3.9.7=h12debd9_1
+    - readline==8.1.2=h7f8727e_1
+    - requests==2.27.1=pyhd3eb1b0_0
+    - ruamel_yaml==0.15.100=py39h27cfd23_0
+    - setuptools==58.0.4=py39h06a4308_0
+    - six==1.16.0=pyhd3eb1b0_0
+    - sqlite==3.37.0=hc218d9a_0
+    - tk==8.6.11=h1ccaba5_0
+    - tqdm==4.62.3=pyhd3eb1b0_1
+    - tzdata==2021e=hda174b7_0
+    - urllib3==1.26.7=pyhd3eb1b0_0
+    - wheel==0.37.1=pyhd3eb1b0_0
+    - xz==5.2.5=h7b6447c_0
+    - yaml==0.2.5=h7b6447c_0
+    - zlib==1.2.11=h7f8727e_4
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-4.5-1_gnu
+  brotlipy           pkgs/main/linux-64::brotlipy-0.7.0-py39h27cfd23_1003
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2021.10.26-h06a4308_2
+  certifi            pkgs/main/linux-64::certifi-2021.10.8-py39h06a4308_2
+  cffi               pkgs/main/linux-64::cffi-1.15.0-py39hd667e15_1
+  charset-normalizer pkgs/main/noarch::charset-normalizer-2.0.4-pyhd3eb1b0_0
+  conda              pkgs/main/linux-64::conda-4.11.0-py39h06a4308_0
+  conda-content-tru~ pkgs/main/noarch::conda-content-trust-0.1.1-pyhd3eb1b0_0
+  conda-package-han~ pkgs/main/linux-64::conda-package-handling-1.7.3-py39h27cfd23_1
+  cryptography       pkgs/main/linux-64::cryptography-36.0.0-py39h9ce1e76_0
+  idna               pkgs/main/noarch::idna-3.3-pyhd3eb1b0_0
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.35.1-h7274673_9
+  libffi             pkgs/main/linux-64::libffi-3.3-he6710b0_2
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-9.3.0-h5101ec6_17
+  libgomp            pkgs/main/linux-64::libgomp-9.3.0-h5101ec6_17
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-9.3.0-hd4cf53a_17
+  ncurses            pkgs/main/linux-64::ncurses-6.3-h7f8727e_2
+  openssl            pkgs/main/linux-64::openssl-1.1.1m-h7f8727e_0
+  pip                pkgs/main/linux-64::pip-21.2.4-py39h06a4308_0
+  pycosat            pkgs/main/linux-64::pycosat-0.6.3-py39h27cfd23_0
+  pycparser          pkgs/main/noarch::pycparser-2.21-pyhd3eb1b0_0
+  pyopenssl          pkgs/main/noarch::pyopenssl-21.0.0-pyhd3eb1b0_1
+  pysocks            pkgs/main/linux-64::pysocks-1.7.1-py39h06a4308_0
+  python             pkgs/main/linux-64::python-3.9.7-h12debd9_1
+  readline           pkgs/main/linux-64::readline-8.1.2-h7f8727e_1
+  requests           pkgs/main/noarch::requests-2.27.1-pyhd3eb1b0_0
+  ruamel_yaml        pkgs/main/linux-64::ruamel_yaml-0.15.100-py39h27cfd23_0
+  setuptools         pkgs/main/linux-64::setuptools-58.0.4-py39h06a4308_0
+  six                pkgs/main/noarch::six-1.16.0-pyhd3eb1b0_0
+  sqlite             pkgs/main/linux-64::sqlite-3.37.0-hc218d9a_0
+  tk                 pkgs/main/linux-64::tk-8.6.11-h1ccaba5_0
+  tqdm               pkgs/main/noarch::tqdm-4.62.3-pyhd3eb1b0_1
+  tzdata             pkgs/main/noarch::tzdata-2021e-hda174b7_0
+  urllib3            pkgs/main/noarch::urllib3-1.26.7-pyhd3eb1b0_0
+  wheel              pkgs/main/noarch::wheel-0.37.1-pyhd3eb1b0_0
+  xz                 pkgs/main/linux-64::xz-5.2.5-h7b6447c_0
+  yaml               pkgs/main/linux-64::yaml-0.2.5-h7b6447c_0
+  zlib               pkgs/main/linux-64::zlib-1.2.11-h7f8727e_4
+
+
+Preparing transaction: done
+Executing transaction: done
+installation finished.
+Do you wish the installer to initialize Miniconda3
+by running conda init? [yes|no]
+[no] >>> yes
+
+You have chosen to not have conda modify your shell scripts at all.
+To activate conda's base environment in your current shell session:
+
+eval "$(/root/miniconda3/bin/conda shell.YOUR_SHELL_NAME hook)"
+
+To install conda's shell functions for easier access, first activate, then:
+
+conda init
+
+If you'd prefer that conda's base environment not be activated on startup,
+   set the auto_activate_base parameter to false:
+
+conda config --set auto_activate_base false
+
+Thank you for installing Miniconda3!

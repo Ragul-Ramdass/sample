@@ -1,0 +1,969 @@
+Script started on 2022-02-22 18:45:50+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="66" LINES="38"]
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ ls
+file.txt  line.txt        my_unix_session.txt
+[0m[01;34mfolder1[0m   my_git_session  [01;34mtiger[0m
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ sudo apt install build-essentials[K
+[sudo] password for ragul_r: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-9
+  dpkg-dev fakeroot g++ g++-9 gcc gcc-9 gcc-9-base
+  libalgorithm-diff-perl libalgorithm-diff-xs-perl
+  libalgorithm-merge-perl libasan5 libatomic1 libbinutils
+  libc-dev-bin libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0
+  libctf0 libdpkg-perl libfakeroot libfile-fcntllock-perl
+  libgcc-9-dev libgomp1 libisl22 libitm1 liblsan0 libmpc3
+  libquadmath0 libstdc++-9-dev libtsan0 libubsan1 linux-libc-dev
+  make manpages-dev
+Suggested packages:
+  binutils-doc cpp-doc gcc-9-locales debian-keyring g++-multilib
+  g++-9-multilib gcc-9-doc gcc-multilib autoconf automake
+  libtool flex bison gdb gcc-doc gcc-9-multilib glibc-doc bzr
+  libstdc++-9-doc make-doc
+The following NEW packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu
+  build-essential cpp cpp-9 dpkg-dev fakeroot g++ g++-9 gcc
+  gcc-9 gcc-9-base libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan5
+  libatomic1 libbinutils libc-dev-bin libc6-dev libcc1-0
+  libcrypt-dev libctf-nobfd0 libctf0 libdpkg-perl libfakeroot
+  libfile-fcntllock-perl libgcc-9-dev libgomp1 libisl22 libitm1
+  liblsan0 libmpc3 libquadmath0 libstdc++-9-dev libtsan0
+  libubsan1 linux-libc-dev make manpages-dev
+0 upgraded, 41 newly installed, 0 to remove and 0 not upgraded.
+Need to get 43.0 MB of archives.
+After this operation, 189 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+[33m0% [Working][0m[33m0% [Connecting to archive.ubuntu.com (91.189.88.152)][0m[33m                                                     0% [Waiting for headers][0m                        Ign:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils-common amd64 2.34-6ubuntu1.1
+[33m                        0% [Working][0m            Ign:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libbinutils amd64 2.34-6ubuntu1.1
+            Ign:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libctf-nobfd0 amd64 2.34-6ubuntu1.1
+[33m0% [Waiting for headers] [Waiting for headers][0m                                              Ign:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libctf0 amd64 2.34-6ubuntu1.1
+                                              Ign:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.34-6ubuntu1.1
+                                              Ign:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils amd64 2.34-6ubuntu1.1
+[33m0% [Waiting for headers] [Waiting for headers][0m                                              Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libc-dev-bin amd64 2.31-0ubuntu9.2 [71.8 kB]
+[33m0% [Waiting for headers] [7 libc-dev-bin 26.2 kB/71.8 kB 36%][0m                                                             Err:1 http://security.ubuntu.com/ubuntu focal-updates/main amd64 binutils-common amd64 2.34-6ubuntu1.1
+  404  Not Found [IP: 91.189.88.152 80]
+[33m                                                             0% [7 libc-dev-bin 26.2 kB/71.8 kB 36%][0m                                       Err:2 http://security.ubuntu.com/ubuntu focal-updates/main amd64 libbinutils amd64 2.34-6ubuntu1.1
+  404  Not Found [IP: 91.189.88.152 80]
+[33m0% [7 libc-dev-bin 53.3 kB/71.8 kB 74%][0m                                       Err:3 http://security.ubuntu.com/ubuntu focal-updates/main amd64 libctf-nobfd0 amd64 2.34-6ubuntu1.1
+  404  Not Found [IP: 91.189.88.152 80]
+                                       Err:4 http://security.ubuntu.com/ubuntu focal-updates/main amd64 libctf0 amd64 2.34-6ubuntu1.1
+  404  Not Found [IP: 91.189.88.152 80]
+                                       Err:5 http://security.ubuntu.com/ubuntu focal-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.34-6ubuntu1.1
+  404  Not Found [IP: 91.189.88.152 80]
+                                       Err:6 http://security.ubuntu.com/ubuntu focal-updates/main amd64 binutils amd64 2.34-6ubuntu1.1
+  404  Not Found [IP: 91.189.88.152 80]
+[33m0% [7 libc-dev-bin 53.3 kB/71.8 kB 74%][0m[33m                                       1% [Working][0m            Ign:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-libc-dev amd64 5.4.0-81.91
+            Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 libcrypt-dev amd64 1:4.4.10-10ubuntu4 [104 kB]
+[33m1% [9 libcrypt-dev 3245 B/104 kB 3%][0m                                    Err:8 http://security.ubuntu.com/ubuntu focal-updates/main amd64 linux-libc-dev amd64 5.4.0-81.91
+  404  Not Found [IP: 91.189.88.152 80]
+[33m1% [9 libcrypt-dev 75.7 kB/104 kB 73%][0m[33m                                      1% [Working][0m            Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libc6-dev amd64 2.31-0ubuntu9.2 [2520 kB]
+[33m1% [10 libc6-dev 4056 B/2520 kB 0%][0m[33m2% [10 libc6-dev 304 kB/2520 kB 12%][0m[33m3% [10 libc6-dev 1045 kB/2520 kB 41%][0m[33m                                     6% [Waiting for headers][0m                        Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gcc-9-base amd64 9.3.0-17ubuntu1~20.04 [19.1 kB]
+[33m7% [11 gcc-9-base 19.1 kB/19.1 kB 100%][0m[33m                                       7% [Working][0m            Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 libisl22 amd64 0.22.1-1 [592 kB]
+[33m7% [12 libisl22 65.5 kB/592 kB 11%][0m[33m                                   9% [Working][0m            Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 libmpc3 amd64 1.1.0-1 [40.8 kB]
+[33m9% [13 libmpc3 40.8 kB/40.8 kB 100%][0m[33m                                    9% [Working][0m            Get:14 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cpp-9 amd64 9.3.0-17ubuntu1~20.04 [7494 kB]
+[33m9% [14 cpp-9 55.1 kB/7494 kB 1%][0m[33m10% [14 cpp-9 233 kB/7494 kB 3%][0m[33m13% [14 cpp-9 1860 kB/7494 kB 25%][0m[33m13% [14 cpp-9 2003 kB/7494 kB 27%][0m[33m17% [14 cpp-9 4466 kB/7494 kB 60%][0m[33m20% [14 cpp-9 5929 kB/7494 kB 79%]                  1474 kB/s 22s[0m[33m20% [14 cpp-9 5929 kB/7494 kB 79%]                  1474 kB/s 22s[0m[33m22% [14 cpp-9 7158 kB/7494 kB 96%]                  1474 kB/s 22s[0m[33m24% [Working]                                       1474 kB/s 21s[0m                                                                 Get:15 http://archive.ubuntu.com/ubuntu focal/main amd64 cpp amd64 4:9.3.0-1ubuntu2 [27.6 kB]
+[33m24% [15 cpp 27.6 kB/27.6 kB 100%]                   1474 kB/s 21s[0m[33m24% [Working]                                       1474 kB/s 21s[0m                                                                 Get:16 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcc1-0 amd64 10.3.0-1ubuntu1~20.04 [48.8 kB]
+[33m24% [16 libcc1-0 48.8 kB/48.8 kB 100%]              1474 kB/s 21s[0m[33m25% [Working]                                       1474 kB/s 21s[0m                                                                 Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgomp1 amd64 10.3.0-1ubuntu1~20.04 [102 kB]
+[33m25% [17 libgomp1 20.8 kB/102 kB 20%]                1474 kB/s 21s[0m[33m25% [Working]                                       1474 kB/s 21s[0m                                                                 Get:18 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libitm1 amd64 10.3.0-1ubuntu1~20.04 [26.2 kB]
+                                                                 Get:19 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libatomic1 amd64 10.3.0-1ubuntu1~20.04 [9284 B]
+                                                                 Get:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libasan5 amd64 9.3.0-17ubuntu1~20.04 [394 kB]
+[33m27% [20 libasan5 394 kB/394 kB 100%]                1474 kB/s 21s[0m                                                                 Get:21 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 liblsan0 amd64 10.3.0-1ubuntu1~20.04 [835 kB]
+[33m28% [21 liblsan0 275 kB/835 kB 33%]                 1474 kB/s 21s[0m[33m28% [21 liblsan0 461 kB/835 kB 55%]                 1474 kB/s 21s[0m[33m29% [21 liblsan0 464 kB/835 kB 56%]                 1474 kB/s 21s[0m[33m30% [Working]                                       1474 kB/s 20s[0m                                                                 Get:22 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libtsan0 amd64 10.3.0-1ubuntu1~20.04 [2009 kB]
+[33m30% [22 libtsan0 321 kB/2009 kB 16%]                1474 kB/s 20s[0m[33m30% [22 libtsan0 345 kB/2009 kB 17%]                1474 kB/s 20s[0m[33m34% [Working]                                       1474 kB/s 19s[0m                                                                 Get:23 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libubsan1 amd64 10.3.0-1ubuntu1~20.04 [784 kB]
+[33m35% [23 libubsan1 393 kB/784 kB 50%]                1474 kB/s 19s[0m[33m36% [Working]                                       1474 kB/s 18s[0m                                                                 Get:24 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libquadmath0 amd64 10.3.0-1ubuntu1~20.04 [146 kB]
+[33m36% [24 libquadmath0 53.9 kB/146 kB 37%]            1474 kB/s 18s[0m[33m37% [Working]                                       1474 kB/s 18s[0m                                                                 Get:25 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgcc-9-dev amd64 9.3.0-17ubuntu1~20.04 [2360 kB]
+[33m37% [25 libgcc-9-dev 298 kB/2360 kB 13%]            1474 kB/s 18s[0m[33m38% [25 libgcc-9-dev 808 kB/2360 kB 34%]            1474 kB/s 18s[0m[33m41% [Waiting for headers]                           1474 kB/s 17s[0m                                                                 Get:26 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gcc-9 amd64 9.3.0-17ubuntu1~20.04 [8241 kB]
+[33m42% [26 gcc-9 65.5 kB/8241 kB 1%]                   1474 kB/s 17s[0m[33m43% [26 gcc-9 930 kB/8241 kB 11%]                   1474 kB/s 16s[0m[33m45% [26 gcc-9 2027 kB/8241 kB 25%]                  1474 kB/s 15s[0m[33m48% [26 gcc-9 3244 kB/8241 kB 39%]                  1474 kB/s 15s[0m[33m48% [26 gcc-9 3584 kB/8241 kB 43%]                  1474 kB/s 14s[0m[33m50% [26 gcc-9 4724 kB/8241 kB 57%]                   2084 kB/s 9s[0m[33m50% [26 gcc-9 4834 kB/8241 kB 59%]                   2084 kB/s 9s[0m[33m54% [26 gcc-9 6460 kB/8241 kB 78%]                   2084 kB/s 9s[0m[33m55% [26 gcc-9 7230 kB/8241 kB 88%]                   2084 kB/s 8s[0m[33m55% [26 gcc-9 7232 kB/8241 kB 88%]                   2084 kB/s 8s[0m[33m57% [Working]                                        2084 kB/s 8s[0m                                                                 Get:27 http://archive.ubuntu.com/ubuntu focal/main amd64 gcc amd64 4:9.3.0-1ubuntu2 [5208 B]
+[33m57% [27 gcc 5208 B/5208 B 100%]                      2084 kB/s 8s[0m[33m58% [Working]                                        2084 kB/s 8s[0m                                                                 Get:28 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libstdc++-9-dev amd64 9.3.0-17ubuntu1~20.04 [1714 kB]
+[33m58% [28 libstdc++-9-dev 47.8 kB/1714 kB 3%]          2084 kB/s 8s[0m[33m61% [28 libstdc++-9-dev 1694 kB/1714 kB 99%]         2084 kB/s 7s[0m[33m61% [Working]                                        2084 kB/s 7s[0m                                                                 Get:29 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 g++-9 amd64 9.3.0-17ubuntu1~20.04 [8405 kB]
+[33m61% [29 g++-9 8147 B/8405 kB 0%]                     2084 kB/s 7s[0m[33m64% [29 g++-9 1228 kB/8405 kB 15%]                   2084 kB/s 6s[0m[33m64% [29 g++-9 1248 kB/8405 kB 15%]                   2084 kB/s 6s[0m[33m66% [29 g++-9 2309 kB/8405 kB 27%]                   2084 kB/s 6s[0m[33m67% [29 g++-9 3054 kB/8405 kB 36%]                   2084 kB/s 5s[0m[33m69% [29 g++-9 4074 kB/8405 kB 48%]                   2084 kB/s 5s[0m[33m71% [29 g++-9 5097 kB/8405 kB 61%]                   2084 kB/s 4s[0m[33m75% [29 g++-9 7109 kB/8405 kB 85%]                   1926 kB/s 4s[0m[33m75% [29 g++-9 7473 kB/8405 kB 89%]                   1926 kB/s 4s[0m[33m78% [Working]                                        1926 kB/s 3s[0m                                                                 Get:30 http://archive.ubuntu.com/ubuntu focal/main amd64 g++ amd64 4:9.3.0-1ubuntu2 [1604 B]
+[33m78% [30 g++ 1604 B/1604 B 100%]                      1926 kB/s 3s[0m[33m78% [Working]                                        1926 kB/s 3s[0m                                                                 Get:31 http://archive.ubuntu.com/ubuntu focal/main amd64 make amd64 4.2.1-1.2 [162 kB]
+[33m78% [31 make 65.5 kB/162 kB 40%]                     1926 kB/s 3s[0m[33m79% [Waiting for headers]                            1926 kB/s 3s[0m                                                                 Get:32 http://archive.ubuntu.com/ubuntu focal/main amd64 libdpkg-perl all 1.19.7ubuntu3 [230 kB]
+[33m79% [32 libdpkg-perl 52.9 kB/230 kB 23%]             1926 kB/s 3s[0m[33m80% [Working]                                        1926 kB/s 3s[0m                                                                 Get:33 http://archive.ubuntu.com/ubuntu focal/main amd64 dpkg-dev all 1.19.7ubuntu3 [679 kB]
+[33m80% [33 dpkg-dev 65.5 kB/679 kB 10%]                 1926 kB/s 3s[0m[33m82% [Working]                                        1926 kB/s 3s[0m                                                                 Get:34 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 build-essential amd64 12.8ubuntu1.1 [4664 B]
+[33m82% [34 build-essential 4664 B/4664 B 100%]          1926 kB/s 3s[0m[33m82% [Working]                                        1926 kB/s 3s[0m                                                                 Get:35 http://archive.ubuntu.com/ubuntu focal/main amd64 libfakeroot amd64 1.24-1 [25.7 kB]
+[33m82% [35 libfakeroot 25.7 kB/25.7 kB 100%]            1926 kB/s 3s[0m[33m83% [Waiting for headers]                            1926 kB/s 3s[0m                                                                 Get:36 http://archive.ubuntu.com/ubuntu focal/main amd64 fakeroot amd64 1.24-1 [62.6 kB]
+[33m83% [Waiting for headers]                            1926 kB/s 3s[0m                                                                 Get:37 http://archive.ubuntu.com/ubuntu focal/main amd64 libalgorithm-diff-perl all 1.19.03-2 [46.6 kB]
+[33m83% [37 libalgorithm-diff-perl 32.2 kB/46.6 kB 69%]  1926 kB/s 3s[0m[33m84% [Working]                                        1926 kB/s 3s[0m                                                                 Get:38 http://archive.ubuntu.com/ubuntu focal/main amd64 libalgorithm-diff-xs-perl amd64 0.04-6 [11.3 kB]
+[33m84% [Waiting for headers]                            1926 kB/s 3s[0m                                                                 Get:39 http://archive.ubuntu.com/ubuntu focal/main amd64 libalgorithm-merge-perl all 0.08-3 [12.0 kB]
+[33m                                                                 84% [39 libalgorithm-merge-perl 12.0 kB/12.0 kB 100%][0m[33m85% [Working]                                        1926 kB/s 3s[0m                                                                 Get:40 http://archive.ubuntu.com/ubuntu focal/main amd64 libfile-fcntllock-perl amd64 0.22-3build4 [33.1 kB]
+[33m                                                                 85% [40 libfile-fcntllock-perl 33.1 kB/33.1 kB 100%][0m[33m85% [Working]                                        1926 kB/s 3s[0m                                                                 Get:41 http://archive.ubuntu.com/ubuntu focal/main amd64 manpages-dev all 5.05-1 [2266 kB]
+[33m85% [41 manpages-dev 65.5 kB/2266 kB 3%]             1926 kB/s 2s[0m[33m89% [41 manpages-dev 1801 kB/2266 kB 79%]            1926 kB/s 2s[0m[33m90% [Working]                                        1926 kB/s 1s[0m                                                                 Fetched 39.5 MB in 21s (1883 kB/s)
+[1;31mE: [0mFailed to fetch http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils-common_2.34-6ubuntu1.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80][0m
+[1;31mE: [0mFailed to fetch http://security.ubuntu.com/ubuntu/pool/main/b/binutils/libbinutils_2.34-6ubuntu1.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80][0m
+[1;31mE: [0mFailed to fetch http://security.ubuntu.com/ubuntu/pool/main/b/binutils/libctf-nobfd0_2.34-6ubuntu1.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80][0m
+[1;31mE: [0mFailed to fetch http://security.ubuntu.com/ubuntu/pool/main/b/binutils/libctf0_2.34-6ubuntu1.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80][0m
+[1;31mE: [0mFailed to fetch http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils-x86-64-linux-gnu_2.34-6ubuntu1.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80][0m
+[1;31mE: [0mFailed to fetch http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80][0m
+[1;31mE: [0mFailed to fetch http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux-libc-dev_5.4.0-81.91_amd64.deb  404  Not Found [IP: 91.189.88.152 80][0m
+[1;31mE: [0mUnable to fetch some archives, maybe run apt-get update or try with --fix-missing?[0m
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ sudo apt install build-essentialA[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kexit[1Ppwd[1Plspwdexit[2Plssudo apt install build-essentialA[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo apt install build-essentialA[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kexit[1Ppwd[1Plspwdexit[2Plssudo apt install build-essentialA[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo dnf install git[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdnf --hr[Kelp
+
+Command 'dnf' not found, did you mean:
+
+  command 'df' from deb coreutils (8.30-3ubuntu2)
+
+Try: sudo apt install <deb name>
+
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ sudo apt install db=n[K[K[Knf
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+[1;31mE: [0mUnable to locate package dnf[0m
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ sudo apt install git-all
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+[1;31mE: [0mUnable to locate package git-all[0m
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ sudo apt update
+[33m0% [Working][0m            Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+[33m0% [Waiting for headers][0m                        Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+[33m0% [Waiting for headers] [2 InRelease 7881 B/114 kB 7%][0m[33m0% [Waiting for headers] [2 InRelease 28.4 kB/114 kB 25%][0m[33m0% [Waiting for headers] [2 InRelease 68.1 kB/114 kB 60%][0m                                                         Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+[33m0% [3 InRelease 12.0 kB/114 kB 11%] [2 InRelease 72.2 kB/114 kB 6[0m[33m0% [3 InRelease 16.1 kB/114 kB 14%] [2 InRelease 93.3 kB/114 kB 8[0m[33m0% [3 InRelease 16.1 kB/114 kB 14%] [2 InRelease 93.3 kB/114 kB 8[0m[33m0% [3 InRelease 18.4 kB/114 kB 16%] [2 InRelease 93.3 kB/114 kB 8[0m[33m                                                                 0% [3 InRelease 18.4 kB/114 kB 16%][0m[33m0% [3 InRelease 30.7 kB/114 kB 27%][0m[33m0% [3 InRelease 83.2 kB/114 kB 73%][0m                                   Get:4 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [1263 kB]
+[33m0% [3 InRelease 83.2 kB/114 kB 73%] [4 Packages 3885 B/1263 kB 0%[0m[33m0% [3 InRelease 83.2 kB/114 kB 73%] [4 Packages 32.6 kB/1263 kB 3[0m[33m0% [3 InRelease 83.2 kB/114 kB 73%] [4 Packages 35.8 kB/1263 kB 3[0m[33m0% [3 InRelease 83.2 kB/114 kB 73%] [4 Packages 111 kB/1263 kB 9%[0m[33m0% [3 InRelease 83.2 kB/114 kB 73%] [4 Packages 128 kB/1263 kB 10[0m[33m0% [3 InRelease 83.2 kB/114 kB 73%] [4 Packages 152 kB/1263 kB 12[0m[33m0% [3 InRelease 83.2 kB/114 kB 73%] [4 Packages 152 kB/1263 kB 12[0m[33m0% [3 InRelease 84.7 kB/114 kB 74%] [4 Packages 157 kB/1263 kB 12[0m[33m0% [3 InRelease 84.7 kB/114 kB 74%] [4 Packages 157 kB/1263 kB 12[0m[33m0% [3 InRelease 84.7 kB/114 kB 74%] [4 Packages 169 kB/1263 kB 13[0m[33m0% [3 InRelease 84.7 kB/114 kB 74%] [4 Packages 203 kB/1263 kB 16[0m[33m0% [3 InRelease 84.7 kB/114 kB 74%] [4 Packages 203 kB/1263 kB 16[0m[33m0% [3 InRelease 84.7 kB/114 kB 74%] [4 Packages 203 kB/1263 kB 16[0m[33m0% [3 InRelease 84.7 kB/114 kB 74%] [4 Packages 203 kB/1263 kB 16[0m[33m0% [3 InRelease 84.7 kB/114 kB 74%] [4 Packages 203 kB/1263 kB 16[0m[33m0% [3 InRelease 84.7 kB/114 kB 74%] [4 Packages 219 kB/1263 kB 17[0m[33m0% [3 InRelease 92.9 kB/114 kB 82%] [4 Packages 237 kB/1263 kB 19[0m[33m0% [4 Packages 239 kB/1263 kB 19%]            19.8 kB/s 14min 29s[0m                                                                 Get:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+[33m0% [5 InRelease 12.0 kB/108 kB 11%] [4 Packages 239 kB/1263 kB 19[0m[33m0% [5 InRelease 77.5 kB/108 kB 71%] [4 Packages 239 kB/1263 kB 19[0m[33m0% [5 InRelease 77.5 kB/108 kB 71%] [4 Packages 239 kB/1263 kB 19[0m[33m0% [5 InRelease 80.3 kB/108 kB 74%] [4 Packages 239 kB/1263 kB 19[0m[33m0% [4 Packages 239 kB/1263 kB 19%]            19.8 kB/s 17min 52s[0m[33m                                                                 0% [Waiting for headers] [4 Packages 239 kB/1263 kB 19%][0m                                                        Get:6 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB]
+[33m0% [6 Packages 3885 B/8628 kB 0%] [4 Packages 239 kB/1263 kB 19%][0m[33m14% [6 Packages 142 kB/8628 kB 2%] [4 Packages 239 kB/1263 kB 19%[0m[33m14% [6 Packages 226 kB/8628 kB 3%] [4 Packages 239 kB/1263 kB 19%[0m[33m14% [6 Packages 361 kB/8628 kB 4%] [4 Packages 239 kB/1263 kB 19%[0m[33m15% [6 Packages 453 kB/8628 kB 5%] [4 Packages 284 kB/1263 kB 22%[0m[33m15% [6 Packages 555 kB/8628 kB 6%] [4 Packages 340 kB/1263 kB 27%[0m[33m16% [6 Packages 590 kB/8628 kB 7%] [4 Packages 343 kB/1263 kB 27%[0m[33m16% [6 Packages 645 kB/8628 kB 7%] [4 Packages 343 kB/1263 kB 27%[0m[33m16% [6 Packages 708 kB/8628 kB 8%] [4 Packages 343 kB/1263 kB 27%[0m[33m16% [6 Packages 745 kB/8628 kB 9%] [4 Packages 343 kB/1263 kB 27%[0m[33m17% [6 Packages 851 kB/8628 kB 10%] [4 Packages 343 kB/1263 kB 27[0m[33m17% [6 Packages 986 kB/8628 kB 11%] [4 Packages 343 kB/1263 kB 27[0m[33m18% [6 Packages 1113 kB/8628 kB 13%] [4 Packages 347 kB/1263 kB 2[0m[33m18% [6 Packages 1244 kB/8628 kB 14%] [4 Packages 398 kB/1263 kB 3[0m[33m19% [6 Packages 1405 kB/8628 kB 16%] [4 Packages 435 kB/1263 kB 3[0m[33m20% [6 Packages 1557 kB/8628 kB 18%] [4 Packages 488 kB/1263 kB 3[0m[33m20% [6 Packages 1660 kB/8628 kB 19%] [4 Packages 496 kB/1263 kB 3[0m[33m21% [6 Packages 1814 kB/8628 kB 21%] [4 Packages 521 kB/1263 kB 4[0m[33m21% [6 Packages 1965 kB/8628 kB 23%] [4 Packages 554 kB/1263 kB 4[0m[33m22% [6 Packages 2076 kB/8628 kB 24%] [4 Packages 566 kB/1263 kB 4[0m[33m22% [6 Packages 2080 kB/8628 kB 24%] [4 Packages 591 kB/1263 kB 4[0m[33m22% [6 Packages 2126 kB/8628 kB 25%] [4 Packages 620 kB/1263 kB 4[0m[33m23% [6 Packages 2237 kB/8628 kB 26%] [4 Packages 628 kB/1263 kB 5[0m[33m23% [6 Packages 2388 kB/8628 kB 28%] [4 Packages 636 kB/1263 kB 5[0m[33m24% [6 Packages 2554 kB/8628 kB 30%] [4 Packages 678 kB/1263 kB 5[0m[33m25% [6 Packages 2704 kB/8628 kB 31%] [4 Packages 678 kB/1263 kB 5[0m[33m25% [6 Packages 2847 kB/8628 kB 33%] [4 Packages 678 kB/1263 kB 5[0m[33m25% [6 Packages 2958 kB/8628 kB 34%] [4 Packages 678 kB/1263 kB 5[0m[33m26% [6 Packages 3101 kB/8628 kB 36%] [4 Packages 678 kB/1263 kB 5[0m[33m27% [6 Packages 3255 kB/8628 kB 38%] [4 Packages 678 kB/1263 kB 5[0m[33m27% [6 Packages 3300 kB/8628 kB 38%] [4 Packages 678 kB/1263 kB 5[0m[33m27% [6 Packages 3306 kB/8628 kB 38%] [4 Packages 678 kB/1263 kB 5[0m[33m27% [6 Packages 3310 kB/8628 kB 38%] [4 Packages 678 kB/1263 kB 5[0m[33m27% [6 Packages 3394 kB/8628 kB 39%] [4 Packages 678 kB/1263 kB 5[0m[33m27% [6 Packages 3490 kB/8628 kB 40%] [4 Packages 678 kB/1263 kB 5[0m[33m28% [6 Packages 3584 kB/8628 kB 42%] [4 Packages 678 kB/1263 kB 5[0m[33m28% [6 Packages 3686 kB/8628 kB 43%] [4 Packages 678 kB/1263 kB 5[0m[33m28% [6 Packages 3766 kB/8628 kB 44%] [4 Packages 678 kB/1263 kB 5[0m[33m29% [6 Packages 3839 kB/8628 kB 44%] [4 Packages 678 kB/1263 kB 5[0m[33m29% [6 Packages 3886 kB/8628 kB 45%] [4 Packages 678 kB/1263 kB 5[0m[33m29% [6 Packages 3951 kB/8628 kB 46%] [4 Packages 678 kB/1263 kB 5[0m[33m29% [6 Packages 4055 kB/8628 kB 47%] [4 Packages 678 kB/1263 kB 5[0m[33m30% [6 Packages 4072 kB/8628 kB 47%] [4 Packages 678 kB/1263 kB 5[0m[33m30% [6 Packages 4233 kB/8628 kB 49%] [4 Packages 678 kB/1263 kB 5[0m[33m31% [6 Packages 4391 kB/8628 kB 51%] [4 Packages 678 kB/1263 kB 5[0m[33m31% [6 Packages 4551 kB/8628 kB 53%] [4 Packages 678 kB/1263 kB 5[0m[33m32% [6 Packages 4653 kB/8628 kB 54%] [4 Packages 678 kB/1263 kB 5[0m[33m32% [6 Packages 4763 kB/8628 kB 55%] [4 Packages 678 kB/1263 kB 5[0m[33m32% [6 Packages 4841 kB/8628 kB 56%] [4 Packages 678 kB/1263 kB 5[0m[33m33% [6 Packages 4966 kB/8628 kB 58%] [4 Packages 678 kB/1263 kB 5[0m[33m33% [6 Packages 5128 kB/8628 kB 59%] [4 Packages 678 kB/1263 kB 5[0m[33m34% [6 Packages 5284 kB/8628 kB 61%] [4 Packages 678 kB/1263 kB 5[0m[33m35% [6 Packages 5437 kB/8628 kB 63%] [4 Packages 678 kB/1263 kB 5[0m[33m35% [6 Packages 5599 kB/8628 kB 65%] [4 Packages 678 kB/1263 kB 5[0m[33m36% [6 Packages 5751 kB/8628 kB 67%] [4 Packages 678 kB/1263 kB 5[0m[33m36% [6 Packages 5830 kB/8628 kB 68%] [4 Packages 682 kB/1263 kB 5[0m[33m37% [6 Packages 5953 kB/8628 kB 69%] [4 Packages 762 kB/1263 kB 6[0m[33m37% [6 Packages 6106 kB/8628 kB 71%] [4 Packages 787 kB/1263 kB 6[0m[33m38% [6 Packages 6269 kB/8628 kB 73%] [4 Packages 806 kB/1263 kB 6[0m[33m39% [6 Packages 6424 kB/8628 kB 74%] [4 Packages 818 kB/1263 kB 6[0m[33m39% [6 Packages 6581 kB/8628 kB 76%] [4 Packages 835 kB/1263 kB 6[0m[33m40% [6 Packages 6704 kB/8628 kB 78%] [4 Packages 838 kB/1263 kB 6[0m[33m40% [6 Packages 6771 kB/8628 kB 78%] [4 Packages 838 kB/1263 kB 6[0m[33m40% [6 Packages 6811 kB/8628 kB 79%] [4 Packages 838 kB/1263 kB 6[0m[33m41% [6 Packages 6963 kB/8628 kB 81%] [4 Packages 870 kB/1263 kB 6[0m[33m41% [6 Packages 7065 kB/8628 kB 82%] [4 Packages 928 kB/1263 kB 7[0m[33m42% [6 Packages 7212 kB/8628 kB 84%] [4 Packages 977 kB/1263 kB 7[0m[33m43% [6 Packages 7357 kB/8628 kB 85%] [4 Packages 1018 kB/1263 kB [0m[33m43% [6 Packages 7464 kB/8628 kB 87%] [4 Packages 1030 kB/1263 kB [0m[33m44% [6 Packages 7624 kB/8628 kB 88%] [4 Packages 1113 kB/1263 kB [0m[33m45% [6 Packages 7781 kB/8628 kB 90%] [4 Packages 1171 kB/1263 kB [0m[33m46% [6 Packages 7924 kB/8628 kB 92%]                 296 kB/s 41s[0m[33m46% [4 Packages store 0 B] [6 Packages 7924 kB/8628 kB 92%] [Conn[0m[33m                                                                 46% [6 Packages 7991 kB/8628 kB 93%] [Waiting for headers][0m                                                          Get:7 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [221 kB]
+[33m46% [6 Packages 8058 kB/8628 kB 93%] [7 Translation-en 12.1 kB/22[0m[33m47% [6 Packages 8213 kB/8628 kB 95%] [7 Translation-en 40.8 kB/22[0m[33m48% [6 Packages 8369 kB/8628 kB 97%] [7 Translation-en 131 kB/221[0m[33m49% [6 Packages 8475 kB/8628 kB 98%]                 296 kB/s 39s[0m[33m49% [7 Translation-en store 0 B] [6 Packages 8475 kB/8628 kB 98%][0m[33m                                                                 49% [6 Packages 8510 kB/8628 kB 99%] [Waiting for headers][0m                                                          Get:8 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [9556 B]
+[33m49% [6 Packages 8565 kB/8628 kB 99%] [8 Commands-amd64 3890 B/955[0m[33m49% [6 Packages 8565 kB/8628 kB 99%]                 296 kB/s 38s[0m[33m49% [8 Commands-amd64 store 0 B] [6 Packages 8565 kB/8628 kB 99%][0m[33m                                                                 50% [6 Packages 8565 kB/8628 kB 99%] [Waiting for headers][0m[33m50% [Waiting for headers]                            296 kB/s 38s[0m[33m50% [6 Packages store 0 B] [Connecting to archive.ubuntu.com (91.[0m                                                                 Get:9 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [764 kB]
+[33m50% [6 Packages store 0 B] [Connecting to archive.ubuntu.com (91.[0m                                                                 Get:10 http://archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB]
+[33m50% [6 Packages store 0 B] [10 Translation-en 12.1 kB/5124 kB 0%][0m[33m51% [6 Packages store 0 B] [10 Translation-en 49.4 kB/5124 kB 1%][0m[33m51% [6 Packages store 0 B] [10 Translation-en 49.4 kB/5124 kB 1%][0m[33m51% [6 Packages store 0 B] [10 Translation-en 57.6 kB/5124 kB 1%][0m[33m52% [10 Translation-en 57.6 kB/5124 kB 1%] [9 Packages 405 kB/764[0m[33m52% [10 Translation-en 84.5 kB/5124 kB 2%] [9 Packages 507 kB/764[0m[33m53% [10 Translation-en 149 kB/5124 kB 3%] [9 Packages 626 kB/764 [0m[33m53% [10 Translation-en 152 kB/5124 kB 3%] [9 Packages 730 kB/764 [0m[33m53% [10 Translation-en 152 kB/5124 kB 3%]            346 kB/s 30s[0m[33m53% [9 Packages store 0 B] [10 Translation-en 152 kB/5124 kB 3%] [0m[33m                                                                 54% [10 Translation-en 152 kB/5124 kB 3%] [Waiting for headers][0m                                                               Get:11 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [109 kB]
+[33m54% [10 Translation-en 152 kB/5124 kB 3%] [11 Translation-en 3887[0m[33m54% [10 Translation-en 153 kB/5124 kB 3%]            346 kB/s 30s[0m[33m54% [11 Translation-en store 0 B] [10 Translation-en 153 kB/5124 [0m[33m                                                                 54% [10 Translation-en 153 kB/5124 kB 3%] [Waiting for headers][0m                                                               Get:12 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [504 B]
+[33m54% [10 Translation-en 153 kB/5124 kB 3%] [12 Commands-amd64 504 [0m[33m54% [10 Translation-en 153 kB/5124 kB 3%]            346 kB/s 30s[0m[33m54% [12 Commands-amd64 store 0 B] [10 Translation-en 153 kB/5124 [0m[33m                                                                 55% [10 Translation-en 153 kB/5124 kB 3%] [Waiting for headers][0m                                                               Get:13 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [679 kB]
+[33m55% [10 Translation-en 220 kB/5124 kB 4%] [13 Packages 3887 B/679[0m[33m55% [10 Translation-en 224 kB/5124 kB 4%] [13 Packages 116 kB/679[0m[33m56% [10 Translation-en 285 kB/5124 kB 6%] [13 Packages 226 kB/679[0m[33m56% [10 Translation-en 288 kB/5124 kB 6%] [13 Packages 326 kB/679[0m[33m57% [10 Translation-en 384 kB/5124 kB 7%] [13 Packages 437 kB/679[0m[33m58% [10 Translation-en 457 kB/5124 kB 9%] [13 Packages 539 kB/679[0m[33m58% [10 Translation-en 497 kB/5124 kB 10%] [13 Packages 649 kB/67[0m[33m58% [10 Translation-en 517 kB/5124 kB 10%]           346 kB/s 27s[0m[33m58% [13 Packages store 0 B] [10 Translation-en 517 kB/5124 kB 10%[0m[33m                                                                 59% [10 Translation-en 517 kB/5124 kB 10%] [Waiting for headers][0m                                                                Get:14 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [116 kB]
+[33m59% [10 Translation-en 517 kB/5124 kB 10%] [14 Translation-en 388[0m[33m59% [10 Translation-en 545 kB/5124 kB 11%]           251 kB/s 36s[0m[33m59% [14 Translation-en store 0 B] [10 Translation-en 545 kB/5124 [0m[33m                                                                 59% [10 Translation-en 545 kB/5124 kB 11%] [Waiting for headers][0m                                                                Get:15 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [13.1 kB]
+[33m59% [10 Translation-en 566 kB/5124 kB 11%] [15 Commands-amd64 388[0m[33m59% [10 Translation-en 566 kB/5124 kB 11%]           251 kB/s 36s[0m[33m59% [15 Commands-amd64 store 0 B] [10 Translation-en 566 kB/5124 [0m[33m                                                                 60% [10 Translation-en 566 kB/5124 kB 11%] [Waiting for headers][0m                                                                Get:16 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [20.7 kB]
+[33m60% [10 Translation-en 570 kB/5124 kB 11%] [16 Packages 3889 B/20[0m[33m60% [10 Translation-en 570 kB/5124 kB 11%]           251 kB/s 36s[0m[33m60% [16 Packages store 0 B] [10 Translation-en 570 kB/5124 kB 11%[0m[33m                                                                 60% [10 Translation-en 570 kB/5124 kB 11%] [Waiting for headers][0m                                                                Get:17 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [5196 B]
+[33m60% [10 Translation-en 582 kB/5124 kB 11%] [17 Translation-en 519[0m[33m60% [10 Translation-en 582 kB/5124 kB 11%]           251 kB/s 36s[0m[33m60% [17 Translation-en store 0 B] [10 Translation-en 582 kB/5124 [0m[33m                                                                 60% [10 Translation-en 582 kB/5124 kB 11%] [Waiting for headers][0m                                                                Get:18 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [500 B]
+[33m60% [10 Translation-en 586 kB/5124 kB 11%] [18 Commands-amd64 500[0m[33m60% [10 Translation-en 586 kB/5124 kB 11%]           251 kB/s 36s[0m[33m60% [18 Commands-amd64 store 0 B] [10 Translation-en 586 kB/5124 [0m[33m61% [10 Translation-en 593 kB/5124 kB 12%]           251 kB/s 36s[0m[33m61% [10 Translation-en 597 kB/5124 kB 12%]           251 kB/s 36s[0m[33m61% [10 Translation-en 666 kB/5124 kB 13%]           251 kB/s 36s[0m[33m61% [10 Translation-en 711 kB/5124 kB 14%]           251 kB/s 36s[0m[33m61% [10 Translation-en 723 kB/5124 kB 14%]           251 kB/s 35s[0m[33m61% [10 Translation-en 735 kB/5124 kB 14%]           251 kB/s 35s[0m[33m61% [10 Translation-en 739 kB/5124 kB 14%]           251 kB/s 35s[0m[33m61% [10 Translation-en 744 kB/5124 kB 15%]           251 kB/s 35s[0m[33m61% [10 Translation-en 744 kB/5124 kB 15%]           251 kB/s 35s[0m[33m61% [10 Translation-en 744 kB/5124 kB 15%]           251 kB/s 35s[0m[33m61% [10 Translation-en 817 kB/5124 kB 16%]      49.2 kB/s 3min 1s[0m[33m61% [10 Translation-en 820 kB/5124 kB 16%]      49.2 kB/s 3min 1s[0m[33m62% [10 Translation-en 853 kB/5124 kB 17%]      49.2 kB/s 3min 0s[0m[33m62% [10 Translation-en 865 kB/5124 kB 17%]      49.2 kB/s 3min 0s[0m[33m62% [10 Translation-en 868 kB/5124 kB 17%]      49.2 kB/s 3min 0s[0m[33m62% [10 Translation-en 934 kB/5124 kB 18%]     49.2 kB/s 2min 59s[0m[33m62% [10 Translation-en 936 kB/5124 kB 18%]     49.2 kB/s 2min 59s[0m[33m62% [10 Translation-en 988 kB/5124 kB 19%]     49.2 kB/s 2min 58s[0m[33m62% [10 Translation-en 1001 kB/5124 kB 20%]    49.2 kB/s 2min 57s[0m[33m62% [10 Translation-en 1047 kB/5124 kB 20%]    49.2 kB/s 2min 56s[0m[33m62% [10 Translation-en 1059 kB/5124 kB 21%]    49.2 kB/s 2min 56s[0m[33m62% [10 Translation-en 1063 kB/5124 kB 21%]    49.2 kB/s 2min 56s[0m[33m62% [10 Translation-en 1080 kB/5124 kB 21%]    43.7 kB/s 3min 18s[0m[33m63% [10 Translation-en 1143 kB/5124 kB 22%]    43.7 kB/s 3min 16s[0m[33m63% [10 Translation-en 1144 kB/5124 kB 22%]    43.7 kB/s 3min 16s[0m[33m63% [10 Translation-en 1144 kB/5124 kB 22%]    43.7 kB/s 3min 16s[0m[33m63% [10 Translation-en 1179 kB/5124 kB 23%]    43.7 kB/s 3min 16s[0m[33m63% [10 Translation-en 1183 kB/5124 kB 23%]    43.7 kB/s 3min 15s[0m[33m63% [10 Translation-en 1184 kB/5124 kB 23%]    43.7 kB/s 3min 15s[0m[33m63% [10 Translation-en 1243 kB/5124 kB 24%]    43.7 kB/s 3min 14s[0m[33m63% [10 Translation-en 1324 kB/5124 kB 26%]    43.7 kB/s 3min 12s[0m[33m63% [10 Translation-en 1325 kB/5124 kB 26%]    43.7 kB/s 3min 12s[0m[33m64% [10 Translation-en 1421 kB/5124 kB 28%]    43.7 kB/s 3min 10s[0m[33m64% [10 Translation-en 1421 kB/5124 kB 28%]    43.7 kB/s 3min 10s[0m[33m64% [10 Translation-en 1486 kB/5124 kB 29%]     67.5 kB/s 2min 2s[0m[33m64% [10 Translation-en 1502 kB/5124 kB 29%]     67.5 kB/s 2min 2s[0m[33m64% [10 Translation-en 1559 kB/5124 kB 30%]     67.5 kB/s 2min 1s[0m[33m64% [10 Translation-en 1559 kB/5124 kB 30%]     67.5 kB/s 2min 1s[0m[33m64% [10 Translation-en 1559 kB/5124 kB 30%]     67.5 kB/s 2min 1s[0m[33m64% [10 Translation-en 1559 kB/5124 kB 30%]     67.5 kB/s 2min 1s[0m[33m64% [10 Translation-en 1562 kB/5124 kB 30%]     67.5 kB/s 2min 1s[0m[33m64% [10 Translation-en 1562 kB/5124 kB 30%]     67.5 kB/s 2min 1s[0m[33m64% [10 Translation-en 1562 kB/5124 kB 30%]     67.5 kB/s 2min 1s[0m[33m64% [10 Translation-en 1578 kB/5124 kB 31%]     67.5 kB/s 2min 0s[0m[33m64% [10 Translation-en 1645 kB/5124 kB 32%]    67.5 kB/s 1min 59s[0m[33m64% [10 Translation-en 1648 kB/5124 kB 32%]    67.5 kB/s 1min 59s[0m[33m64% [10 Translation-en 1652 kB/5124 kB 32%]    27.6 kB/s 4min 53s[0m[33m64% [10 Translation-en 1654 kB/5124 kB 32%]    27.6 kB/s 4min 53s[0m[33m64% [10 Translation-en 1654 kB/5124 kB 32%]    27.6 kB/s 4min 53s[0m[33m65% [10 Translation-en 1690 kB/5124 kB 33%]    27.6 kB/s 4min 52s[0m[33m65% [10 Translation-en 1717 kB/5124 kB 34%]    27.6 kB/s 4min 51s[0m[33m65% [10 Translation-en 1718 kB/5124 kB 34%]    27.6 kB/s 4min 51s[0m[33m65% [10 Translation-en 1718 kB/5124 kB 34%]    27.6 kB/s 4min 51s[0m[33m65% [10 Translation-en 1788 kB/5124 kB 35%]    27.6 kB/s 4min 48s[0m[33m65% [10 Translation-en 1882 kB/5124 kB 37%]    27.6 kB/s 4min 45s[0m[33m65% [10 Translation-en 1885 kB/5124 kB 37%]    27.6 kB/s 4min 45s[0m[33m66% [10 Translation-en 1952 kB/5124 kB 38%]    27.6 kB/s 4min 42s[0m[33m66% [10 Translation-en 1982 kB/5124 kB 39%]    27.6 kB/s 4min 41s[0m[33m66% [10 Translation-en 1985 kB/5124 kB 39%]    55.4 kB/s 2min 20s[0m[33m66% [10 Translation-en 2022 kB/5124 kB 39%]    55.4 kB/s 2min 19s[0m[33m66% [10 Translation-en 2026 kB/5124 kB 40%]    55.4 kB/s 2min 19s[0m[33m66% [10 Translation-en 2026 kB/5124 kB 40%]    55.4 kB/s 2min 19s[0m[33m66% [10 Translation-en 2026 kB/5124 kB 40%]    55.4 kB/s 2min 19s[0m[33m66% [10 Translation-en 2026 kB/5124 kB 40%]    55.4 kB/s 2min 19s[0m[33m66% [10 Translation-en 2026 kB/5124 kB 40%]    55.4 kB/s 2min 19s[0m[33m66% [10 Translation-en 2123 kB/5124 kB 41%]    55.4 kB/s 2min 17s[0m[33m66% [10 Translation-en 2134 kB/5124 kB 42%]    55.4 kB/s 2min 17s[0m[33m66% [10 Translation-en 2156 kB/5124 kB 42%]    55.4 kB/s 2min 17s[0m[33m66% [10 Translation-en 2200 kB/5124 kB 43%]    55.4 kB/s 2min 16s[0m[33m67% [10 Translation-en 2203 kB/5124 kB 43%]    55.4 kB/s 2min 16s[0m[33m67% [10 Translation-en 2252 kB/5124 kB 44%]    44.3 kB/s 2min 49s[0m[33m67% [10 Translation-en 2314 kB/5124 kB 45%]    44.3 kB/s 2min 47s[0m[33m67% [10 Translation-en 2384 kB/5124 kB 47%]    44.3 kB/s 2min 46s[0m[33m67% [10 Translation-en 2432 kB/5124 kB 47%]    44.3 kB/s 2min 44s[0m[33m67% [10 Translation-en 2452 kB/5124 kB 48%]    44.3 kB/s 2min 44s[0m[33m68% [10 Translation-en 2488 kB/5124 kB 49%]    44.3 kB/s 2min 43s[0m[33m68% [10 Translation-en 2496 kB/5124 kB 49%]    44.3 kB/s 2min 43s[0m[33m68% [10 Translation-en 2527 kB/5124 kB 49%]    44.3 kB/s 2min 42s[0m[33m68% [10 Translation-en 2579 kB/5124 kB 50%]    44.3 kB/s 2min 41s[0m[33m68% [10 Translation-en 2591 kB/5124 kB 51%]    44.3 kB/s 2min 41s[0m[33m68% [10 Translation-en 2646 kB/5124 kB 52%]    44.3 kB/s 2min 40s[0m[33m68% [10 Translation-en 2721 kB/5124 kB 53%]    44.3 kB/s 2min 38s[0m[33m68% [10 Translation-en 2730 kB/5124 kB 53%]    79.1 kB/s 1min 28s[0m[33m69% [10 Translation-en 2798 kB/5124 kB 55%]    79.1 kB/s 1min 27s[0m[33m69% [10 Translation-en 2829 kB/5124 kB 55%]    79.1 kB/s 1min 27s[0m[33m69% [10 Translation-en 2831 kB/5124 kB 55%]    79.1 kB/s 1min 27s[0m[33m69% [10 Translation-en 2851 kB/5124 kB 56%]    79.1 kB/s 1min 27s[0m[33m69% [10 Translation-en 2853 kB/5124 kB 56%]    79.1 kB/s 1min 27s[0m[33m69% [10 Translation-en 2892 kB/5124 kB 56%]    79.1 kB/s 1min 26s[0m[33m69% [10 Translation-en 2905 kB/5124 kB 57%]    79.1 kB/s 1min 26s[0m[33m69% [10 Translation-en 2915 kB/5124 kB 57%]    79.1 kB/s 1min 26s[0m[33m69% [10 Translation-en 2991 kB/5124 kB 58%]    79.1 kB/s 1min 25s[0m[33m69% [10 Translation-en 3020 kB/5124 kB 59%]    79.1 kB/s 1min 25s[0m[33m69% [10 Translation-en 3022 kB/5124 kB 59%]    79.1 kB/s 1min 25s[0m[33m70% [10 Translation-en 3044 kB/5124 kB 59%]     52.3 kB/s 2min 8s[0m[33m70% [10 Translation-en 3073 kB/5124 kB 60%]     52.3 kB/s 2min 7s[0m[33m70% [10 Translation-en 3076 kB/5124 kB 60%]     52.3 kB/s 2min 7s[0m[33m70% [10 Translation-en 3108 kB/5124 kB 61%]     52.3 kB/s 2min 7s[0m[33m70% [10 Translation-en 3174 kB/5124 kB 62%]     52.3 kB/s 2min 5s[0m[33m70% [10 Translation-en 3235 kB/5124 kB 63%]     52.3 kB/s 2min 4s[0m[33m71% [10 Translation-en 3346 kB/5124 kB 65%]     52.3 kB/s 2min 2s[0m[33m71% [10 Translation-en 3379 kB/5124 kB 66%]     52.3 kB/s 2min 1s[0m[33m71% [10 Translation-en 3396 kB/5124 kB 66%]     52.3 kB/s 2min 1s[0m[33m71% [10 Translation-en 3400 kB/5124 kB 66%]     52.3 kB/s 2min 1s[0m[33m71% [10 Translation-en 3421 kB/5124 kB 67%]     52.3 kB/s 2min 1s[0m[33m71% [10 Translation-en 3454 kB/5124 kB 67%]     52.3 kB/s 2min 0s[0m[33m71% [10 Translation-en 3454 kB/5124 kB 67%]    68.2 kB/s 1min 32s[0m[33m71% [10 Translation-en 3562 kB/5124 kB 70%]    68.2 kB/s 1min 30s[0m[33m72% [10 Translation-en 3599 kB/5124 kB 70%]    68.2 kB/s 1min 30s[0m[33m72% [10 Translation-en 3666 kB/5124 kB 72%]    68.2 kB/s 1min 29s[0m[33m72% [10 Translation-en 3708 kB/5124 kB 72%]    68.2 kB/s 1min 28s[0m[33m72% [10 Translation-en 3761 kB/5124 kB 73%]    68.2 kB/s 1min 27s[0m[33m72% [10 Translation-en 3791 kB/5124 kB 74%]    68.2 kB/s 1min 27s[0m[33m72% [10 Translation-en 3800 kB/5124 kB 74%]    68.2 kB/s 1min 27s[0m[33m72% [10 Translation-en 3828 kB/5124 kB 75%]    68.2 kB/s 1min 26s[0m[33m72% [10 Translation-en 3832 kB/5124 kB 75%]    68.2 kB/s 1min 26s[0m[33m73% [10 Translation-en 3880 kB/5124 kB 76%]    68.2 kB/s 1min 26s[0m[33m73% [10 Translation-en 3884 kB/5124 kB 76%]    68.2 kB/s 1min 25s[0m[33m73% [10 Translation-en 3943 kB/5124 kB 77%]    81.3 kB/s 1min 11s[0m[33m73% [10 Translation-en 4006 kB/5124 kB 78%]    81.3 kB/s 1min 10s[0m[33m73% [10 Translation-en 4010 kB/5124 kB 78%]    81.3 kB/s 1min 10s[0m[33m73% [10 Translation-en 4070 kB/5124 kB 79%]     81.3 kB/s 1min 9s[0m[33m73% [10 Translation-en 4087 kB/5124 kB 80%]     81.3 kB/s 1min 9s[0m[33m74% [10 Translation-en 4139 kB/5124 kB 81%]     81.3 kB/s 1min 8s[0m[33m74% [10 Translation-en 4207 kB/5124 kB 82%]     81.3 kB/s 1min 8s[0m[33m74% [10 Translation-en 4267 kB/5124 kB 83%]     81.3 kB/s 1min 7s[0m[33m74% [10 Translation-en 4332 kB/5124 kB 85%]     81.3 kB/s 1min 6s[0m[33m74% [10 Translation-en 4356 kB/5124 kB 85%]     81.3 kB/s 1min 6s[0m[33m75% [10 Translation-en 4413 kB/5124 kB 86%]     81.3 kB/s 1min 5s[0m[33m75% [10 Translation-en 4434 kB/5124 kB 87%]     81.3 kB/s 1min 5s[0m[33m75% [10 Translation-en 4474 kB/5124 kB 87%]         88.3 kB/s 59s[0m[33m75% [10 Translation-en 4529 kB/5124 kB 88%]         88.3 kB/s 59s[0m[33m75% [10 Translation-en 4541 kB/5124 kB 89%]         88.3 kB/s 58s[0m[33m75% [10 Translation-en 4545 kB/5124 kB 89%]         88.3 kB/s 58s[0m[33m75% [10 Translation-en 4594 kB/5124 kB 90%]         88.3 kB/s 58s[0m[33m76% [10 Translation-en 4672 kB/5124 kB 91%]         88.3 kB/s 57s[0m[33m76% [10 Translation-en 4705 kB/5124 kB 92%]         88.3 kB/s 57s[0m[33m76% [10 Translation-en 4705 kB/5124 kB 92%]         88.3 kB/s 57s[0m[33m76% [10 Translation-en 4743 kB/5124 kB 93%]         88.3 kB/s 56s[0m[33m76% [10 Translation-en 4784 kB/5124 kB 93%]         88.3 kB/s 56s[0m[33m76% [10 Translation-en 4893 kB/5124 kB 96%]         88.3 kB/s 54s[0m[33m77% [10 Translation-en 4993 kB/5124 kB 97%]         88.3 kB/s 53s[0m[33m77% [10 Translation-en 5078 kB/5124 kB 99%]          100 kB/s 46s[0m[33m77% [Working]                                        100 kB/s 46s[0m[33m77% [10 Translation-en store 0 B] [Connecting to archive.ubuntu.c[0m                                                                 Get:19 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+[33m77% [10 Translation-en store 0 B] [19 Commands-amd64 12.1 kB/265 [0m[33m77% [10 Translation-en store 0 B] [19 Commands-amd64 40.8 kB/265 [0m[33m78% [19 Commands-amd64 54.7 kB/265 kB 21%]           100 kB/s 45s[0m[33m78% [19 Commands-amd64 151 kB/265 kB 57%]            100 kB/s 44s[0m[33m78% [Working]                                        100 kB/s 43s[0m[33m                                                                 78% [19 Commands-amd64 store 0 B] [Waiting for headers][0m[33m79% [Waiting for headers]                            100 kB/s 43s[0m                                                                 Get:20 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+[33m79% [20 Packages 12.1 kB/144 kB 8%]                  100 kB/s 43s[0m[33m79% [Working]                                        100 kB/s 42s[0m[33m79% [20 Packages store 0 B] [Waiting for headers]    100 kB/s 42s[0m[33m79% [Waiting for headers]                            100 kB/s 42s[0m                                                                 Get:21 http://archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+[33m79% [21 Translation-en 3887 B/104 kB 4%]             100 kB/s 41s[0m[33m80% [Working]                                        100 kB/s 40s[0m[33m                                                                 80% [21 Translation-en store 0 B] [Waiting for headers][0m[33m80% [Waiting for headers]                            100 kB/s 40s[0m                                                                 Get:22 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B]
+[33m80% [22 Commands-amd64 9136 B/9136 B 100%]           100 kB/s 40s[0m[33m80% [Working]                                        100 kB/s 40s[0m[33m                                                                 80% [22 Commands-amd64 store 0 B] [Waiting for headers][0m[33m80% [Waiting for headers]                            100 kB/s 40s[0m                                                                 Get:23 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1598 kB]
+[33m80% [23 Packages 356 B/1598 kB 0%]                   100 kB/s 40s[0m[33m81% [23 Packages 185 kB/1598 kB 12%]                 100 kB/s 39s[0m[33m82% [23 Packages 374 kB/1598 kB 23%]                 100 kB/s 37s[0m[33m82% [23 Packages 550 kB/1598 kB 34%]                 100 kB/s 35s[0m[33m83% [23 Packages 726 kB/1598 kB 45%]                 100 kB/s 33s[0m[33m84% [23 Packages 904 kB/1598 kB 57%]                 241 kB/s 13s[0m[33m84% [23 Packages 1088 kB/1598 kB 68%]                241 kB/s 12s[0m[33m85% [23 Packages 1261 kB/1598 kB 79%]                241 kB/s 11s[0m[33m85% [23 Packages 1429 kB/1598 kB 89%]                241 kB/s 11s[0m[33m86% [Working]                                        241 kB/s 10s[0m[33m86% [23 Packages store 0 B] [Waiting for headers]    241 kB/s 10s[0m                                                                 Get:24 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [306 kB]
+[33m                                                                 86% [23 Packages store 0 B] [24 Translation-en 3887 B/306 kB 1%][0m[33m87% [24 Translation-en 75.7 kB/306 kB 25%]           241 kB/s 10s[0m[33m87% [24 Translation-en 249 kB/306 kB 82%]             241 kB/s 9s[0m[33m87% [Working]                                         241 kB/s 9s[0m[33m                                                                 87% [24 Translation-en store 0 B] [Waiting for headers][0m[33m88% [Waiting for headers]                             241 kB/s 9s[0m                                                                 Get:25 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [14.7 kB]
+[33m88% [25 Commands-amd64 3889 B/14.7 kB 26%]            241 kB/s 9s[0m[33m88% [Working]                                         241 kB/s 9s[0m[33m                                                                 88% [25 Commands-amd64 store 0 B] [Waiting for headers][0m[33m88% [Waiting for headers]                             241 kB/s 9s[0m                                                                 Get:26 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [818 kB]
+[33m88% [26 Packages 12.1 kB/818 kB 1%]                   241 kB/s 8s[0m[33m89% [26 Packages 185 kB/818 kB 23%]                   241 kB/s 8s[0m[33m89% [26 Packages 313 kB/818 kB 38%]                   241 kB/s 7s[0m[33m90% [26 Packages 461 kB/818 kB 56%]                   241 kB/s 7s[0m[33m90% [26 Packages 602 kB/818 kB 74%]                   241 kB/s 6s[0m[33m91% [26 Packages 782 kB/818 kB 96%]                   241 kB/s 5s[0m[33m91% [Working]                                         241 kB/s 5s[0m[33m91% [26 Packages store 0 B] [Waiting for headers]     241 kB/s 5s[0m                                                                 Get:27 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [116 kB]
+[33m                                                                 91% [26 Packages store 0 B] [27 Translation-en 3887 B/116 kB 3%][0m[33m91% [27 Translation-en 20.3 kB/116 kB 17%]            301 kB/s 4s[0m[33m92% [Working]                                         301 kB/s 4s[0m[33m                                                                 92% [27 Translation-en store 0 B] [Waiting for headers][0m[33m92% [Waiting for headers]                             301 kB/s 4s[0m                                                                 Get:28 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [500 B]
+[33m92% [28 Commands-amd64 500 B/500 B 100%]              301 kB/s 4s[0m[33m92% [Working]                                         301 kB/s 4s[0m[33m                                                                 92% [28 Commands-amd64 store 0 B] [Waiting for headers][0m[33m92% [Waiting for headers]                             301 kB/s 4s[0m                                                                 Get:29 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [905 kB]
+[33m92% [29 Packages 3887 B/905 kB 0%]                    301 kB/s 4s[0m[33m93% [29 Packages 140 kB/905 kB 15%]                   301 kB/s 3s[0m[33m93% [29 Packages 301 kB/905 kB 33%]                   301 kB/s 3s[0m[33m94% [29 Packages 486 kB/905 kB 54%]                   301 kB/s 2s[0m[33m95% [29 Packages 674 kB/905 kB 75%]                   301 kB/s 1s[0m[33m95% [29 Packages 811 kB/905 kB 90%]                   301 kB/s 1s[0m[33m95% [29 Packages 863 kB/905 kB 95%]                   301 kB/s 1s[0m[33m95% [Working]                                         301 kB/s 1s[0m[33m95% [29 Packages store 0 B] [Waiting for headers]     301 kB/s 1s[0m                                                                 Get:30 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [201 kB]
+[33m95% [29 Packages store 0 B] [30 Translation-en 12.1 kB/201 kB 6%][0m[33m96% [30 Translation-en 28.5 kB/201 kB 14%]            301 kB/s 1s[0m[33m96% [30 Translation-en 196 kB/201 kB 98%]             301 kB/s 0s[0m[33m96% [Working]                                         301 kB/s 0s[0m[33m                                                                 96% [30 Translation-en store 0 B] [Waiting for headers][0m[33m97% [Waiting for headers]                             301 kB/s 0s[0m                                                                 Get:31 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [20.1 kB]
+[33m97% [31 Commands-amd64 3889 B/20.1 kB 19%]            301 kB/s 0s[0m[33m97% [Working]                                         301 kB/s 0s[0m[33m                                                                 97% [31 Commands-amd64 store 0 B] [Waiting for headers][0m[33m97% [Waiting for headers]                             301 kB/s 0s[0m                                                                 Get:32 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [23.7 kB]
+[33m97% [32 Packages 7985 B/23.7 kB 34%]                  301 kB/s 0s[0m[33m97% [Working]                                         301 kB/s 0s[0m[33m97% [32 Packages store 0 B] [Waiting for headers]     301 kB/s 0s[0m[33m97% [Waiting for headers]                             301 kB/s 0s[0m                                                                 Get:33 http://archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [7312 B]
+[33m97% [33 Translation-en 3890 B/7312 B 53%]             301 kB/s 0s[0m[33m97% [Working]                                         301 kB/s 0s[0m[33m                                                                 97% [33 Translation-en store 0 B] [Waiting for headers][0m[33m98% [Waiting for headers]                             301 kB/s 0s[0m                                                                 Get:34 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [580 B]
+[33m98% [34 Commands-amd64 580 B/580 B 100%]              301 kB/s 0s[0m[33m98% [Working]                                         301 kB/s 0s[0m[33m                                                                 98% [34 Commands-amd64 store 0 B] [Waiting for headers][0m[33m98% [Waiting for headers]                             301 kB/s 0s[0m                                                                 Get:35 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [42.0 kB]
+[33m98% [35 Packages 3889 B/42.0 kB 9%]                   301 kB/s 0s[0m[33m98% [Working]                                         301 kB/s 0s[0m[33m98% [35 Packages store 0 B] [Waiting for headers]     301 kB/s 0s[0m[33m98% [Waiting for headers]                             301 kB/s 0s[0m                                                                 Get:36 http://archive.ubuntu.com/ubuntu focal-backports/main Translation-en [10.0 kB]
+[33m98% [36 Translation-en 3889 B/10.0 kB 39%]            217 kB/s 0s[0m[33m98% [Working]                                         217 kB/s 0s[0m[33m                                                                 98% [36 Translation-en store 0 B] [Waiting for headers][0m[33m98% [Waiting for headers]                             217 kB/s 0s[0m                                                                 Get:37 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [864 B]
+[33m98% [37 Commands-amd64 864 B/864 B 100%]              217 kB/s 0s[0m[33m98% [Working]                                         217 kB/s 0s[0m[33m                                                                 98% [37 Commands-amd64 store 0 B] [Waiting for headers][0m[33m99% [Waiting for headers]                             217 kB/s 0s[0m                                                                 Get:38 http://archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+[33m99% [38 Commands-amd64 116 B/116 B 100%]              217 kB/s 0s[0m[33m99% [Working]                                         217 kB/s 0s[0m[33m                                                                 99% [38 Commands-amd64 store 0 B] [Waiting for headers][0m[33m99% [Waiting for headers]                             217 kB/s 0s[0m                                                                 Get:39 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [21.6 kB]
+[33m99% [39 Packages 3889 B/21.6 kB 18%]                  217 kB/s 0s[0m[33m99% [Working]                                         217 kB/s 0s[0m[33m99% [39 Packages store 0 B] [Waiting for headers]     217 kB/s 0s[0m[33m99% [Waiting for headers]                             217 kB/s 0s[0m                                                                 Get:40 http://archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [15.0 kB]
+[33m99% [40 Translation-en 3889 B/15.0 kB 26%]            217 kB/s 0s[0m[33m99% [Working]                                         217 kB/s 0s[0m[33m                                                                 99% [40 Translation-en store 0 B] [Waiting for headers][0m[33m100% [Waiting for headers]                            217 kB/s 0s[0m                                                                 Get:41 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [716 B]
+[33m100% [41 Commands-amd64 716 B/716 B 100%]             217 kB/s 0s[0m[33m100% [Working]                                        217 kB/s 0s[0m[33m                                                                 100% [41 Commands-amd64 store 0 B] [Waiting for headers][0m[33m100% [Waiting for headers]                            217 kB/s 0s[0m                                                                 Get:42 http://archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+[33m100% [42 Commands-amd64 116 B/116 B 100%]             217 kB/s 0s[0m[33m100% [Working]                                        217 kB/s 0s[0m[33m100% [42 Commands-amd64 store 0 B]                    217 kB/s 0s[0m[33m100% [Working]                                        217 kB/s 0s[0m                                                                 Fetched 21.9 MB in 2min 34s (143 kB/s)
+
+i q ^[Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 4%Reading package lists... 4%Reading package lists... 6%Reading package lists... 6%Reading package lists... 6%Reading package lists... 6%Reading package lists... 6%Reading package lists... 6%Reading package lists... 38%Reading package lists... 42%Reading package lists... 42%Reading package lists... 61%Reading package lists... 61%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 68%Reading package lists... 68%Reading package lists... 72%Reading package lists... 72%Reading package lists... 75%Reading package lists... 75%Reading package lists... 77%Reading package lists... 77%Reading package lists... 81%Reading package lists... 81%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 87%Reading package lists... 87%Reading package lists... 90%Reading package lists... 90%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+126 packages can be upgraded. Run 'apt list --upgradable' to see them.
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ 
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ git --version
+git version 2.25.1
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ git config --list --show-origin
+[?1h=[K[?1l>]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$  git config --global user.name "John Doe"[1P"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"[1P"[1P"[1P"[1P"R"a"g"u"l"-" [A]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CR"a"m"d"a"s"s"
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$  git config --global user.name "John Doe"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C "John Doe"[K[A]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C "John Doe" [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@em "John Doe" [A]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca "John Doe"[A]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci "John Doe"[A]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl "John Doe"[A]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[1P"[1P"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"[1P"[1P"[1P"r"a"g"u"l" [A]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C."r"a"n"m"[1P"[1P"m"d"a"s"s"@"t"i"g"e"r"a"n"a"l"y"t"i"c"s","[1P"."c"o"m"
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ git init
+Initialized empty Git repository in /home/ragul_r/.git/
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.bash_history[m
+	[31m.bash_logout[m
+	[31m.bashrc[m
+	[31m.gitconfig[m
+	[31m.landscape/[m
+	[31m.motd_shown[m
+	[31m.profile[m
+	[31m.sudo_as_admin_successful[m
+	[31m.viminfo[m
+	[31mfile.txt[m
+	[31mfolder1/[m
+	[31mline.txt[m
+	[31mmy_git_session[m
+	[31mmy_unix_session.txt[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ mkdir repository
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ ls
+file.txt  line.txt        my_unix_session.txt  [0m[01;34mtiger[0m
+[01;34mfolder1[0m   my_git_session  [01;34mrepository[0m
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ cd repositor
+bash: cd: repositor: No such file or directory
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ cd repository
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git init
+Initialized empty Git repository in /home/ragul_r/repository/.git/
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git add .
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git =[Kcommit -m "ubuntu_repo"
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ ls[K[Ktouch file1.txt
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ echpo[K[Ko ""h"e"l"l"o"[C >file1.txt
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ echo "hello" >file1.txt[8Ptouch file1.txtgit commit -m "ubuntu_repo"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mfile1.txt[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git commit -m "ubuntu_repo"[4Pecho "hello" >file1.txt[8Ptouch file1.txtgit commit -m "ubuntu_repo"add .[K
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git add .[Kgit add .commit -m "ubuntu_repo"
+[master (root-commit) 275f292] ubuntu_repo
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file1.txt
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git status
+On branch master
+nothing to commit, working tree clean
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git statuscommit -m "ubuntu_repo"status[K\[K[K[K[K[K[K[Kconfig user.name
+Ragul-Ramdass
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git config user.name[C[K[K[K[K[K.email
+ragul.ramdass@tigeranalytics.com
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git remote add origib[Kn https: //github.com/ra[K[Kragul-ra[K[KRamdass/sample.git
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git push -u origin ,[Kmaster
+Username for 'https://github.com': Ragul-ramdass^[[D^[[D^[[D^[[D                       Ramdass
+Password for 'https://Ragul-Ramdass@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/ragul-Ramdass/sample.git/'
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ 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[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit push -u origin master
+Username for 'https://github.com': Ragul-Ramdass
+Password for 'https://Ragul-Ramdass@github.com': 
+Enumerating objects: 3, done.
+Counting objects:  33% (1/3)Counting objects:  66% (2/3)Counting objects: 100% (3/3)Counting objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 231 bytes | 46.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: This repository moved. Please use the new location:[K
+remote:   https://github.com/Ragul-Ramdass/sample.git[K
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:[K
+remote:      https://github.com/Ragul-Ramdass/sample/pull/new/master[K
+remote: 
+To https://github.com/ragul-Ramdass/sample.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ touch readme.[K[K[K[K[K[K[K[K[K[K[K[K[Kgi [Kt nramc==[K[K[K[K[K[K[Kbranch testing
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git add README test.rb LICENSE
+fatal: pathspec 'README' did not match any files
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git add README test.rb LICENSE[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kexit
+exit
+
+Script done on 2022-02-22 19:49:42+05:30 [COMMAND_EXIT_CODE="128"]
+Script started on 2022-03-02 13:38:37+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ cd sample
+]0;ragul_r@DESKTOP-CSI671E: ~/sample[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/sample[00m$ git branch
+[?1h=* [32mmain[m[m
+[K[?1l>]0;ragul_r@DESKTOP-CSI671E: ~/sample[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/sample[00m$ ls
+README.md
+]0;ragul_r@DESKTOP-CSI671E: ~/sample[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/sample[00m$ git chechout traing
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+]0;ragul_r@DESKTOP-CSI671E: ~/sample[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/sample[00m$ git chechout traing[1P[1@k[C[C[C[C[C[C[C[C[Cigng
+error: pathspec 'training' did not match any file(s) known to git
+]0;ragul_r@DESKTOP-CSI671E: ~/sample[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/sample[00m$ git branch traing[Cigng
+]0;ragul_r@DESKTOP-CSI671E: ~/sample[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/sample[00m$ git stsatis[K[K[K[K[Katus
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+]0;ragul_r@DESKTOP-CSI671E: ~/sample[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/sample[00m$ git checkout main[K[K[K[Ktraining
+Switched to branch 'training'
+]0;ragul_r@DESKTOP-CSI671E: ~/sample[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/sample[00m$ ls
+README.md
+]0;ragul_r@DESKTOP-CSI671E: ~/sample[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/sample[00m$ gh issue create --title ""M"y" "i"s"s"u"e"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[K[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[C[Kcd ..
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ ls
+[0m[01;32mMiniconda3-latest-Linux-x86_64.sh[0m  line.txt       [01;34mmle-training[0m              my_unix_session.txt  [01;34msample[0m
+file.txt                           miniconda.txt  my_git_session            [01;34mnewfolder[0m            [01;34mtiger[0m
+[01;34mfolder1[0m                            [01;34mminiconda3[0m     my_miniconda_session.txt  [01;34mrepository[0m
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ cd re[K[K[K[K[Kcd sample
+]0;ragul_r@DESKTOP-CSI671E: ~/sample[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/sample[00m$ git b[Kcheckout maun[K[Kin
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+]0;ragul_r@DESKTOP-CSI671E: ~/sample[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/sample[00m$ git branch -d training
+Deleted branch training (was e56168f).
+]0;ragul_r@DESKTOP-CSI671E: ~/sample[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/sample[00m$ cd ..
+]0;ragul_r@DESKTOP-CSI671E: ~[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~[00m$ cd repository
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git chechout [K[K[K[K[Kkout trainin[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kbranch
+[?1h=* [32mmaster[m[m
+  testing[m[m
+[K[?1l>]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ lds[K[Ks
+file1.txt
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ h[Kgh issue --title ""M"y" "i"s"s"u"e"[C --body ""S"a"m"p"l"e" "i"s"s"u"e"[C --assignee @me
+
+Command 'gh' not found, but can be installed with:
+
+sudo apt install gitsome
+
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ sudo apt install gitsome
+[sudo] password for ragul_r: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  docutils-common javascript-common libimagequant0 libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblcms2-2 libpaper-utils libpaper1 libpython3.8 libpython3.8-minimal libpython3.8-stdlib libtiff5
+  libwebp6 libwebpdemux2 libwebpmux3 make python-babel-localedata python-pip-whl python3-alabaster python3-babel
+  python3-docopt python3-docutils python3-feedparser python3-imagesize python3-numpydoc python3-olefile
+  python3-packaging python3-pil python3-ply python3-prompt-toolkit python3-pygments python3-pyparsing python3-roman
+  python3-setproctitle python3-sigmavirus24-urltemplate python3-sphinx python3-tz python3-venv python3-wcwidth
+  python3.8 python3.8-minimal python3.8-venv sgml-base sphinx-common xml-core xonsh
+Suggested packages:
+  apache2 | lighttpd | httpd liblcms2-utils make-doc docutils-doc fonts-linuxlibertine | ttf-linux-libertine
+  texlive-lang-french texlive-latex-base texlive-latex-recommended python-pil-doc python3-pil-dbg python-ply-doc
+  python-pygments-doc ttf-bitstream-vera python-pyparsing-doc dvipng imagemagick-6.q16 latexmk libjs-mathjax
+  python3-sphinx-rtd-theme python3-stemmer sphinx-doc texlive-fonts-recommended texlive-latex-extra
+  texlive-plain-generic python3.8-doc binutils binfmt-support sgml-base-doc debhelper xonsh-doc
+The following NEW packages will be installed:
+  docutils-common gitsome javascript-common libimagequant0 libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery
+  libjs-sphinxdoc libjs-underscore liblcms2-2 libpaper-utils libpaper1 libtiff5 libwebp6 libwebpdemux2 libwebpmux3
+  make python-babel-localedata python-pip-whl python3-alabaster python3-babel python3-docopt python3-docutils
+  python3-feedparser python3-imagesize python3-numpydoc python3-olefile python3-packaging python3-pil python3-ply
+  python3-prompt-toolkit python3-pygments python3-pyparsing python3-roman python3-setproctitle
+  python3-sigmavirus24-urltemplate python3-sphinx python3-tz python3-venv python3-wcwidth python3.8-venv sgml-base
+  sphinx-common xml-core xonsh
+The following packages will be upgraded:
+  libpython3.8 libpython3.8-minimal libpython3.8-stdlib python3.8 python3.8-minimal
+5 upgraded, 46 newly installed, 0 to remove and 121 not upgraded.
+Need to get 17.5 MB/17.7 MB of archives.
+After this operation, 54.7 MB of additional disk space will be used.
+Do you want to continue? [Y/n] T Y
+[33m1% [Working][0m[33m1% [Connecting to archive.ubuntu.com (91.189.88.142)][0m[33m                                                     1% [Waiting for headers][0m                        Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8 amd64 3.8.10-0ubuntu1~20.04.2 [1625 kB]
+[33m1% [1 libpython3.8 12.0 kB/1625 kB 1%][0m[33m1% [1 libpython3.8 71.8 kB/1625 kB 4%][0m[33m2% [1 libpython3.8 212 kB/1625 kB 13%][0m[33m3% [1 libpython3.8 347 kB/1625 kB 21%][0m[33m3% [1 libpython3.8 482 kB/1625 kB 30%][0m[33m4% [1 libpython3.8 620 kB/1625 kB 38%][0m[33m5% [1 libpython3.8 759 kB/1625 kB 47%][0m[33m5% [1 libpython3.8 898 kB/1625 kB 55%][0m[33m6% [1 libpython3.8 1036 kB/1625 kB 64%][0m[33m6% [1 libpython3.8 1179 kB/1625 kB 73%][0m[33m7% [1 libpython3.8 1310 kB/1625 kB 81%]                                                                242 kB/s 1min 6s[0m[33m8% [1 libpython3.8 1453 kB/1625 kB 89%]                                                                242 kB/s 1min 6s[0m[33m8% [1 libpython3.8 1588 kB/1625 kB 98%]                                                                242 kB/s 1min 5s[0m[33m9% [Working]                                                                                           242 kB/s 1min 5s[0m[33m9% [Waiting for headers]                                                                               242 kB/s 1min 5s[0m                                                                                                                       Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3.8 amd64 3.8.10-0ubuntu1~20.04.2 [387 kB]
+[33m9% [2 python3.8 12.0 kB/387 kB 3%]                                                                     242 kB/s 1min 5s[0m[33m9% [2 python3.8 59.5 kB/387 kB 15%]                                                                    242 kB/s 1min 5s[0m[33m10% [2 python3.8 198 kB/387 kB 51%]                                                                    242 kB/s 1min 4s[0m[33m10% [2 python3.8 325 kB/387 kB 84%]                                                                    242 kB/s 1min 4s[0m[33m11% [Working]                                                                                          242 kB/s 1min 4s[0m                                                                                                                       Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8-stdlib amd64 3.8.10-0ubuntu1~20.04.2 [1675 kB]
+[33m11% [3 libpython3.8-stdlib 5880 B/1675 kB 0%]                                                          242 kB/s 1min 3s[0m[33m12% [3 libpython3.8-stdlib 142 kB/1675 kB 8%]                                                          242 kB/s 1min 3s[0m[33m12% [3 libpython3.8-stdlib 285 kB/1675 kB 17%]                                                         242 kB/s 1min 2s[0m[33m13% [3 libpython3.8-stdlib 428 kB/1675 kB 26%]                                                         242 kB/s 1min 2s[0m[33m14% [3 libpython3.8-stdlib 563 kB/1675 kB 34%]                                                         242 kB/s 1min 1s[0m[33m14% [3 libpython3.8-stdlib 694 kB/1675 kB 41%]                                                         229 kB/s 1min 4s[0m[33m15% [3 libpython3.8-stdlib 833 kB/1675 kB 50%]                                                         229 kB/s 1min 3s[0m[33m15% [3 libpython3.8-stdlib 970 kB/1675 kB 58%]                                                         229 kB/s 1min 3s[0m[33m16% [3 libpython3.8-stdlib 1109 kB/1675 kB 66%]                                                        229 kB/s 1min 2s[0m[33m17% [3 libpython3.8-stdlib 1252 kB/1675 kB 75%]                                                        229 kB/s 1min 2s[0m[33m17% [3 libpython3.8-stdlib 1391 kB/1675 kB 83%]                                                        229 kB/s 1min 1s[0m[33m18% [3 libpython3.8-stdlib 1521 kB/1675 kB 91%]                                                            229 kB/s 60s[0m[33m19% [3 libpython3.8-stdlib 1656 kB/1675 kB 99%]                                                            229 kB/s 60s[0m[33m19% [Working]                                                                                              229 kB/s 60s[0m                                                                                                                       Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3.8-minimal amd64 3.8.10-0ubuntu1~20.04.2 [1900 kB]
+[33m19% [4 python3.8-minimal 3811 B/1900 kB 0%]                                                                229 kB/s 60s[0m[33m20% [4 python3.8-minimal 146 kB/1900 kB 8%]                                                                229 kB/s 59s[0m[33m20% [4 python3.8-minimal 285 kB/1900 kB 15%]                                                               229 kB/s 58s[0m[33m21% [4 python3.8-minimal 428 kB/1900 kB 23%]                                                               229 kB/s 58s[0m[33m22% [4 python3.8-minimal 567 kB/1900 kB 30%]                                                               229 kB/s 57s[0m[33m22% [4 python3.8-minimal 694 kB/1900 kB 37%]                                                               265 kB/s 49s[0m[33m23% [4 python3.8-minimal 825 kB/1900 kB 43%]                                                               265 kB/s 48s[0m[33m23% [4 python3.8-minimal 962 kB/1900 kB 51%]                                                               265 kB/s 48s[0m[33m24% [4 python3.8-minimal 1101 kB/1900 kB 58%]                                                              265 kB/s 47s[0m[33m25% [4 python3.8-minimal 1240 kB/1900 kB 65%]                                                              265 kB/s 47s[0m[33m25% [4 python3.8-minimal 1375 kB/1900 kB 72%]                                                              265 kB/s 46s[0m[33m26% [4 python3.8-minimal 1518 kB/1900 kB 80%]                                                              265 kB/s 46s[0m[33m26% [4 python3.8-minimal 1647 kB/1900 kB 87%]                                                              265 kB/s 45s[0m[33m27% [4 python3.8-minimal 1786 kB/1900 kB 94%]                                                              265 kB/s 45s[0m[33m28% [Working]                                                                                              265 kB/s 44s[0m                                                                                                                       Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8-minimal amd64 3.8.10-0ubuntu1~20.04.2 [717 kB]
+[33m28% [5 libpython3.8-minimal 3813 B/717 kB 1%]                                                              265 kB/s 44s[0m[33m29% [5 libpython3.8-minimal 146 kB/717 kB 20%]                                                             265 kB/s 44s[0m[33m29% [5 libpython3.8-minimal 285 kB/717 kB 40%]                                                             265 kB/s 43s[0m[33m30% [5 libpython3.8-minimal 424 kB/717 kB 59%]                                                             266 kB/s 43s[0m[33m31% [5 libpython3.8-minimal 551 kB/717 kB 77%]                                                             266 kB/s 42s[0m[33m31% [5 libpython3.8-minimal 567 kB/717 kB 79%]                                                             266 kB/s 42s[0m[33m31% [5 libpython3.8-minimal 702 kB/717 kB 98%]                                                             266 kB/s 42s[0m[33m32% [Waiting for headers]                                                                                  266 kB/s 42s[0m                                                                                                                       Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 sgml-base all 1.29.1 [12.4 kB]
+[33m32% [6 sgml-base 3815 B/12.4 kB 31%]                                                                       266 kB/s 41s[0m[33m32% [Working]                                                                                              266 kB/s 41s[0m                                                                                                                       Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 xml-core all 0.18+nmu1 [21.6 kB]
+[33m32% [7 xml-core 3815 B/21.6 kB 18%]                                                                        266 kB/s 41s[0m[33m33% [Working]                                                                                              266 kB/s 41s[0m                                                                                                                       Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 docutils-common all 0.16+dfsg-2 [116 kB]
+[33m33% [8 docutils-common 3583 B/116 kB 3%]                                                                   266 kB/s 41s[0m[33m34% [Working]                                                                                              266 kB/s 41s[0m                                                                                                                       Get:9 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-docopt all 0.6.2-2.2ubuntu1 [19.7 kB]
+[33m34% [9 python3-docopt 3815 B/19.7 kB 19%]                                                                  266 kB/s 41s[0m[33m34% [Working]                                                                                              266 kB/s 41s[0m                                                                                                                       Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-feedparser all 5.2.1-2 [45.1 kB]
+[33m34% [10 python3-feedparser 3815 B/45.1 kB 8%]                                                              266 kB/s 41s[0m[33m35% [Working]                                                                                              266 kB/s 41s[0m                                                                                                                       Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 libjs-jquery all 3.3.1~dfsg-3 [329 kB]
+[33m35% [11 libjs-jquery 7909 B/329 kB 2%]                                                                     266 kB/s 41s[0m[33m35% [11 libjs-jquery 146 kB/329 kB 44%]                                                                    266 kB/s 40s[0m[33m36% [11 libjs-jquery 277 kB/329 kB 84%]                                                                    266 kB/s 40s[0m[33m36% [Working]                                                                                              266 kB/s 39s[0m                                                                                                                       Get:12 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libjs-underscore all 1.9.1~dfsg-1ubuntu0.20.04.1 [99.5 kB]
+[33m36% [12 libjs-underscore 3814 B/99.5 kB 4%]                                                                266 kB/s 39s[0m[33m37% [Working]                                                                                              266 kB/s 39s[0m                                                                                                                       Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 libjs-sphinxdoc all 1.8.5-7ubuntu3 [97.1 kB]
+[33m37% [13 libjs-sphinxdoc 3814 B/97.1 kB 4%]                                                                 266 kB/s 39s[0m[33m38% [Working]                                                                                              266 kB/s 39s[0m                                                                                                                       Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 sphinx-common all 1.8.5-7ubuntu3 [491 kB]
+[33m38% [14 sphinx-common 3813 B/491 kB 1%]                                                                169 kB/s 1min 1s[0m[33m39% [14 sphinx-common 142 kB/491 kB 29%]                                                                   169 kB/s 60s[0m[33m39% [14 sphinx-common 281 kB/491 kB 57%]                                                                   169 kB/s 60s[0m[33m40% [14 sphinx-common 420 kB/491 kB 85%]                                                                   169 kB/s 59s[0m[33m41% [Working]                                                                                              169 kB/s 58s[0m                                                                                                                       Get:15 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-alabaster all 0.7.8-1build1 [18.7 kB]
+[33m41% [15 python3-alabaster 3815 B/18.7 kB 20%]                                                              169 kB/s 58s[0m[33m41% [Working]                                                                                              169 kB/s 58s[0m                                                                                                                       Get:16 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python-babel-localedata all 2.6.0+dfsg.1-1ubuntu2.2 [4628 kB]
+[33m41% [16 python-babel-localedata 3811 B/4628 kB 0%]                                                         169 kB/s 58s[0m[33m42% [16 python-babel-localedata 142 kB/4628 kB 3%]                                                         169 kB/s 57s[0m[33m43% [16 python-babel-localedata 281 kB/4628 kB 6%]                                                         169 kB/s 57s[0m[33m43% [16 python-babel-localedata 420 kB/4628 kB 9%]                                                         169 kB/s 56s[0m[33m44% [16 python-babel-localedata 563 kB/4628 kB 12%]                                                        169 kB/s 55s[0m[33m44% [16 python-babel-localedata 694 kB/4628 kB 15%]                                                        169 kB/s 54s[0m[33m45% [16 python-babel-localedata 833 kB/4628 kB 18%]                                                        169 kB/s 53s[0m[33m46% [16 python-babel-localedata 970 kB/4628 kB 21%]                                                        169 kB/s 53s[0m[33m46% [16 python-babel-localedata 1109 kB/4628 kB 24%]                                                       257 kB/s 34s[0m[33m47% [16 python-babel-localedata 1248 kB/4628 kB 27%]                                                       257 kB/s 33s[0m[33m48% [16 python-babel-localedata 1391 kB/4628 kB 30%]                                                       257 kB/s 33s[0m[33m48% [16 python-babel-localedata 1522 kB/4628 kB 33%]                                                       257 kB/s 32s[0m[33m49% [16 python-babel-localedata 1660 kB/4628 kB 36%]                                                       257 kB/s 32s[0m[33m49% [16 python-babel-localedata 1799 kB/4628 kB 39%]                                                       257 kB/s 31s[0m[33m50% [16 python-babel-localedata 1942 kB/4628 kB 42%]                                                       257 kB/s 31s[0m[33m51% [16 python-babel-localedata 2079 kB/4628 kB 45%]                                                       257 kB/s 30s[0m[33m51% [16 python-babel-localedata 2219 kB/4628 kB 48%]                                                       257 kB/s 29s[0m[33m52% [16 python-babel-localedata 2350 kB/4628 kB 51%]                                                       257 kB/s 29s[0m[33m53% [16 python-babel-localedata 2486 kB/4628 kB 54%]                                                       257 kB/s 28s[0m[33m53% [16 python-babel-localedata 2582 kB/4628 kB 56%]                                                       257 kB/s 28s[0m[33m54% [16 python-babel-localedata 2716 kB/4628 kB 59%]                                                       267 kB/s 27s[0m[33m54% [16 python-babel-localedata 2859 kB/4628 kB 62%]                                                       267 kB/s 26s[0m[33m55% [16 python-babel-localedata 2998 kB/4628 kB 65%]                                                       267 kB/s 25s[0m[33m55% [16 python-babel-localedata 3142 kB/4628 kB 68%]                                                       267 kB/s 25s[0m[33m56% [16 python-babel-localedata 3279 kB/4628 kB 71%]                                                       267 kB/s 24s[0m[33m57% [16 python-babel-localedata 3410 kB/4628 kB 74%]                                                       267 kB/s 24s[0m[33m57% [16 python-babel-localedata 3553 kB/4628 kB 77%]                                                       267 kB/s 23s[0m[33m58% [16 python-babel-localedata 3686 kB/4628 kB 80%]                                                       267 kB/s 23s[0m[33m59% [16 python-babel-localedata 3826 kB/4628 kB 83%]                                                       267 kB/s 22s[0m[33m59% [16 python-babel-localedata 3961 kB/4628 kB 86%]                                                       267 kB/s 22s[0m[33m59% [16 python-babel-localedata 3996 kB/4628 kB 86%]                                                       267 kB/s 22s[0m[33m60% [16 python-babel-localedata 4135 kB/4628 kB 89%]                                                       267 kB/s 21s[0m[33m61% [16 python-babel-localedata 4270 kB/4628 kB 92%]                                                       258 kB/s 21s[0m[33m61% [16 python-babel-localedata 4409 kB/4628 kB 95%]                                                       258 kB/s 21s[0m[33m62% [16 python-babel-localedata 4541 kB/4628 kB 98%]                                                       258 kB/s 20s[0m[33m63% [Working]                                                                                              258 kB/s 20s[0m                                                                                                                       Get:17 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-tz all 2019.3-1 [24.4 kB]
+[33m63% [17 python3-tz 12.0 kB/24.4 kB 49%]                                                                    258 kB/s 20s[0m[33m63% [Working]                                                                                              258 kB/s 20s[0m                                                                                                                       Get:18 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-babel all 2.6.0+dfsg.1-1ubuntu2.2 [83.5 kB]
+[33m63% [18 python3-babel 3814 B/83.5 kB 5%]                                                                   258 kB/s 20s[0m[33m64% [Working]                                                                                              258 kB/s 20s[0m                                                                                                                       Get:19 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-roman all 2.0.0-3build1 [8728 B]
+[33m64% [19 python3-roman 8728 B/8728 B 100%]                                                                  258 kB/s 20s[0m[33m64% [Working]                                                                                              258 kB/s 20s[0m                                                                                                                       Get:20 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-docutils all 0.16+dfsg-2 [368 kB]
+[33m64% [20 python3-docutils 7909 B/368 kB 2%]                                                                 258 kB/s 20s[0m[33m65% [20 python3-docutils 150 kB/368 kB 41%]                                                                258 kB/s 19s[0m[33m66% [20 python3-docutils 289 kB/368 kB 79%]                                                                258 kB/s 18s[0m[33m66% [Working]                                                                                              258 kB/s 18s[0m                                                                                                                       Get:21 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-imagesize all 1.2.0-1 [5808 B]
+[33m66% [21 python3-imagesize 5808 B/5808 B 100%]                                                              258 kB/s 18s[0m[33m67% [Working]                                                                                              258 kB/s 18s[0m                                                                                                                       Get:22 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-pyparsing all 2.4.6-1 [61.3 kB]
+[33m67% [22 python3-pyparsing 16.1 kB/61.3 kB 26%]                                                             258 kB/s 18s[0m[33m67% [Working]                                                                                              258 kB/s 18s[0m                                                                                                                       Get:23 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-packaging all 20.3-1 [26.8 kB]
+[33m68% [23 python3-packaging 16.1 kB/26.8 kB 60%]                                                             258 kB/s 18s[0m[33m68% [Working]                                                                                              258 kB/s 18s[0m                                                                                                                       Get:24 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-pygments all 2.3.1+dfsg-1ubuntu2.2 [579 kB]
+[33m68% [24 python3-pygments 3813 B/579 kB 1%]                                                                 258 kB/s 18s[0m[33m69% [24 python3-pygments 138 kB/579 kB 24%]                                                                176 kB/s 26s[0m[33m69% [24 python3-pygments 277 kB/579 kB 48%]                                                                176 kB/s 25s[0m[33m70% [24 python3-pygments 408 kB/579 kB 70%]                                                                176 kB/s 24s[0m[33m70% [24 python3-pygments 547 kB/579 kB 94%]                                                                176 kB/s 23s[0m[33m71% [Working]                                                                                              176 kB/s 23s[0m                                                                                                                       Get:25 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-sphinx all 1.8.5-7ubuntu3 [482 kB]
+[33m71% [25 python3-sphinx 3813 B/482 kB 1%]                                                                   176 kB/s 23s[0m[33m72% [25 python3-sphinx 142 kB/482 kB 29%]                                                                  176 kB/s 22s[0m[33m72% [25 python3-sphinx 269 kB/482 kB 56%]                                                                  176 kB/s 22s[0m[33m73% [25 python3-sphinx 400 kB/482 kB 83%]                                                                  176 kB/s 21s[0m[33m74% [Working]                                                                                              176 kB/s 20s[0m                                                                                                                       Get:26 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-numpydoc all 0.7.0-2 [18.6 kB]
+[33m74% [26 python3-numpydoc 16.1 kB/18.6 kB 87%]                                                              176 kB/s 20s[0m[33m74% [Working]                                                                                              176 kB/s 20s[0m                                                                                                                       Get:27 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-ply all 3.11-3ubuntu0.1 [46.3 kB]
+[33m74% [27 python3-ply 3815 B/46.3 kB 8%]                                                                     176 kB/s 20s[0m[33m75% [Working]                                                                                              176 kB/s 20s[0m                                                                                                                       Get:28 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-wcwidth all 0.1.8+dfsg1-3 [17.4 kB]
+[33m75% [28 python3-wcwidth 17.4 kB/17.4 kB 100%]                                                              176 kB/s 20s[0m[33m75% [Working]                                                                                              176 kB/s 20s[0m                                                                                                                       Get:29 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-prompt-toolkit all 2.0.10-2 [220 kB]
+[33m75% [29 python3-prompt-toolkit 3813 B/220 kB 2%]                                                           176 kB/s 20s[0m[33m76% [29 python3-prompt-toolkit 138 kB/220 kB 63%]                                                          176 kB/s 19s[0m[33m77% [Working]                                                                                              176 kB/s 19s[0m                                                                                                                       Get:30 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-sigmavirus24-urltemplate all 3.0.1-1 [10.6 kB]
+[33m77% [30 python3-sigmavirus24-urltemplate 7911 B/10.6 kB 75%]                                               176 kB/s 19s[0m[33m77% [Working]                                                                                              176 kB/s 19s[0m                                                                                                                       Get:31 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python-pip-whl all 20.0.2-5ubuntu1.6 [1805 kB]
+[33m77% [31 python-pip-whl 3811 B/1805 kB 0%]                                                                  202 kB/s 16s[0m[33m78% [31 python-pip-whl 124 kB/1805 kB 7%]                                                                  202 kB/s 16s[0m[33m78% [31 python-pip-whl 259 kB/1805 kB 14%]                                                                 202 kB/s 15s[0m[33m79% [31 python-pip-whl 395 kB/1805 kB 22%]                                                                 202 kB/s 14s[0m[33m79% [31 python-pip-whl 534 kB/1805 kB 30%]                                                                 202 kB/s 14s[0m[33m80% [31 python-pip-whl 669 kB/1805 kB 37%]                                                                 202 kB/s 13s[0m[33m81% [31 python-pip-whl 808 kB/1805 kB 45%]                                                                 202 kB/s 12s[0m[33m81% [31 python-pip-whl 939 kB/1805 kB 52%]                                                                 202 kB/s 11s[0m[33m82% [31 python-pip-whl 1070 kB/1805 kB 59%]                                                                202 kB/s 11s[0m[33m82% [31 python-pip-whl 1208 kB/1805 kB 67%]                                                                202 kB/s 10s[0m[33m83% [31 python-pip-whl 1343 kB/1805 kB 74%]                                                                 202 kB/s 9s[0m[33m84% [31 python-pip-whl 1482 kB/1805 kB 82%]                                                                 202 kB/s 9s[0m[33m84% [31 python-pip-whl 1617 kB/1805 kB 90%]                                                                 268 kB/s 6s[0m[33m85% [31 python-pip-whl 1755 kB/1805 kB 97%]                                                                 268 kB/s 5s[0m[33m86% [Working]                                                                                               268 kB/s 5s[0m                                                                                                                       Get:32 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python3.8-venv amd64 3.8.10-0ubuntu1~20.04.2 [5444 B]
+[33m86% [32 python3.8-venv 5444 B/5444 B 100%]                                                                  268 kB/s 5s[0m[33m86% [Working]                                                                                               268 kB/s 5s[0m                                                                                                                       Get:33 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-venv amd64 3.8.2-0ubuntu2 [1228 B]
+[33m86% [33 python3-venv 1228 B/1228 B 100%]                                                                    268 kB/s 5s[0m[33m86% [Working]                                                                                               268 kB/s 5s[0m                                                                                                                       Get:34 http://archive.ubuntu.com/ubuntu focal/universe amd64 xonsh all 0.9.13+dfsg-2 [309 kB]
+[33m86% [34 xonsh 7909 B/309 kB 3%]                                                                             268 kB/s 5s[0m[33m87% [34 xonsh 146 kB/309 kB 47%]                                                                            268 kB/s 5s[0m[33m88% [34 xonsh 281 kB/309 kB 91%]                                                                            268 kB/s 4s[0m[33m88% [Working]                                                                                               268 kB/s 4s[0m                                                                                                                       Get:35 http://archive.ubuntu.com/ubuntu focal/universe amd64 gitsome all 0.8.0+ds-4 [103 kB]
+[33m88% [35 gitsome 20.2 kB/103 kB 20%]                                                                         268 kB/s 4s[0m[33m89% [Working]                                                                                               268 kB/s 4s[0m                                                                                                                       Get:36 http://archive.ubuntu.com/ubuntu focal/main amd64 javascript-common all 11 [6066 B]
+[33m89% [36 javascript-common 6066 B/6066 B 100%]                                                               268 kB/s 4s[0m[33m89% [Working]                                                                                               268 kB/s 4s[0m                                                                                                                       Get:37 http://archive.ubuntu.com/ubuntu focal/main amd64 libimagequant0 amd64 2.12.2-1.1 [31.4 kB]
+[33m89% [37 libimagequant0 3815 B/31.4 kB 12%]                                                                  268 kB/s 4s[0m[33m90% [Working]                                                                                               268 kB/s 4s[0m                                                                                                                       Get:38 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libjpeg-turbo8 amd64 2.0.3-0ubuntu1.20.04.1 [117 kB]
+[33m90% [38 libjpeg-turbo8 16.1 kB/117 kB 14%]                                                                  268 kB/s 4s[0m[33m90% [38 libjpeg-turbo8 103 kB/117 kB 88%]                                                                   268 kB/s 3s[0m[33m91% [Working]                                                                                               268 kB/s 3s[0m                                                                                                                       Get:39 http://archive.ubuntu.com/ubuntu focal/main amd64 libjpeg8 amd64 8c-2ubuntu8 [2194 B]
+[33m91% [39 libjpeg8 2194 B/2194 B 100%]                                                                        268 kB/s 3s[0m[33m91% [Working]                                                                                               268 kB/s 3s[0m                                                                                                                       Get:40 http://archive.ubuntu.com/ubuntu focal/main amd64 liblcms2-2 amd64 2.9-4 [140 kB]
+[33m91% [40 liblcms2-2 3813 B/140 kB 3%]                                                                        268 kB/s 3s[0m[33m92% [Working]                                                                                               268 kB/s 3s[0m                                                                                                                       Get:41 http://archive.ubuntu.com/ubuntu focal/main amd64 libpaper1 amd64 1.1.28 [13.0 kB]
+[33m92% [41 libpaper1 3815 B/13.0 kB 29%]                                                                       268 kB/s 3s[0m[33m93% [Working]                                                                                               268 kB/s 3s[0m                                                                                                                       Get:42 http://archive.ubuntu.com/ubuntu focal/main amd64 libpaper-utils amd64 1.1.28 [8400 B]
+[33m93% [42 libpaper-utils 7912 B/8400 B 94%]                                                                   145 kB/s 5s[0m[33m93% [Working]                                                                                               145 kB/s 5s[0m[33m93% [Waiting for headers]                                                                                   145 kB/s 5s[0m                                                                                                                       Get:43 http://archive.ubuntu.com/ubuntu focal/main amd64 libjbig0 amd64 2.1-3.1build1 [26.7 kB]
+[33m93% [43 libjbig0 3815 B/26.7 kB 14%]                                                                        145 kB/s 5s[0m[33m94% [Working]                                                                                               145 kB/s 5s[0m                                                                                                                       Get:44 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libwebp6 amd64 0.6.1-2ubuntu0.20.04.1 [185 kB]
+[33m94% [44 libwebp6 12.0 kB/185 kB 6%]                                                                         145 kB/s 5s[0m[33m94% [44 libwebp6 142 kB/185 kB 77%]                                                                         145 kB/s 4s[0m[33m95% [Working]                                                                                               145 kB/s 4s[0m                                                                                                                       Get:45 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libtiff5 amd64 4.1.0+git191117-2ubuntu0.20.04.2 [162 kB]
+[33m95% [45 libtiff5 3071 B/162 kB 2%]                                                                          145 kB/s 4s[0m[33m96% [45 libtiff5 135 kB/162 kB 83%]                                                                         145 kB/s 3s[0m[33m96% [Working]                                                                                               145 kB/s 3s[0m                                                                                                                       Get:46 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libwebpdemux2 amd64 0.6.1-2ubuntu0.20.04.1 [9576 B]
+[33m96% [46 libwebpdemux2 3816 B/9576 B 40%]                                                                    145 kB/s 3s[0m[33m96% [Waiting for headers]                                                                                   145 kB/s 2s[0m[33m96% [Waiting for headers]                                                                                   145 kB/s 2s[0m                                                                                                                       Get:47 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libwebpmux3 amd64 0.6.1-2ubuntu0.20.04.1 [19.5 kB]
+[33m97% [47 libwebpmux3 19.5 kB/19.5 kB 100%]                                                                   145 kB/s 2s[0m[33m97% [Working]                                                                                               145 kB/s 2s[0m[33m97% [Waiting for headers]                                                                                   145 kB/s 2s[0m[33m97% [Waiting for headers]                                                                                   145 kB/s 2s[0m                                                                                                                       Get:48 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-olefile all 0.46-2 [33.7 kB]
+[33m97% [48 python3-olefile 7911 B/33.7 kB 23%]                                                                 145 kB/s 2s[0m[33m98% [Working]                                                                                               145 kB/s 2s[0m[33m98% [Waiting for headers]                                                                                   145 kB/s 2s[0m                                                                                                                       Get:49 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-pil amd64 7.0.0-4ubuntu0.5 [363 kB]
+[33m98% [49 python3-pil 3813 B/363 kB 1%]                                                                       145 kB/s 2s[0m[33m98% [49 python3-pil 124 kB/363 kB 34%]                                                                      145 kB/s 1s[0m[33m99% [49 python3-pil 250 kB/363 kB 69%]                                                                      109 kB/s 1s[0m[33m99% [49 python3-pil 349 kB/363 kB 96%]                                                                      109 kB/s 0s[0m[33m100% [Working]                                                                                              109 kB/s 0s[0m                                                                                                                       Get:50 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-setproctitle amd64 1.1.10-1ubuntu1 [15.1 kB]
+[33m100% [50 python3-setproctitle 3817 B/15.1 kB 25%]                                                           109 kB/s 0s[0m[33m100% [Working]                                                                                              109 kB/s 0s[0m                                                                                                                       Fetched 17.5 MB in 1min 21s (216 kB/s)
+Extracting templates from packages: 58%Extracting templates from packages: 100%
+Preconfiguring packages ...
+
+7[0;29r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32223 files and directories currently installed.)
+Preparing to unpack .../00-libpython3.8_3.8.10-0ubuntu1~20.04.2_amd64.deb ...
+7[30;0f[42m[30mProgress: [  0%][49m[39m [..................................................................................................] 8Unpacking libpython3.8:amd64 (3.8.10-0ubuntu1~20.04.2) over (3.8.10-0ubuntu1~20.04) ...
+Preparing to unpack .../01-python3.8_3.8.10-0ubuntu1~20.04.2_amd64.deb ...
+7[30;0f[42m[30mProgress: [  1%][49m[39m [#.................................................................................................] 8Unpacking python3.8 (3.8.10-0ubuntu1~20.04.2) over (3.8.10-0ubuntu1~20.04) ...
+Preparing to unpack .../02-libpython3.8-stdlib_3.8.10-0ubuntu1~20.04.2_amd64.deb ...
+7[30;0f[42m[30mProgress: [  2%][49m[39m [##................................................................................................] 8Unpacking libpython3.8-stdlib:amd64 (3.8.10-0ubuntu1~20.04.2) over (3.8.10-0ubuntu1~20.04) ...
+Preparing to unpack .../03-python3.8-minimal_3.8.10-0ubuntu1~20.04.2_amd64.deb ...
+7[30;0f[42m[30mProgress: [  3%][49m[39m [###...............................................................................................] 8Unpacking python3.8-minimal (3.8.10-0ubuntu1~20.04.2) over (3.8.10-0ubuntu1~20.04) ...
+Preparing to unpack .../04-libpython3.8-minimal_3.8.10-0ubuntu1~20.04.2_amd64.deb ...
+7[30;0f[42m[30mProgress: [  4%][49m[39m [####..............................................................................................] 8Unpacking libpython3.8-minimal:amd64 (3.8.10-0ubuntu1~20.04.2) over (3.8.10-0ubuntu1~20.04) ...
+Selecting previously unselected package sgml-base.
+Preparing to unpack .../05-sgml-base_1.29.1_all.deb ...
+7[30;0f[42m[30mProgress: [  5%][49m[39m [#####.............................................................................................] 8Unpacking sgml-base (1.29.1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../06-xml-core_0.18+nmu1_all.deb ...
+7[30;0f[42m[30mProgress: [  6%][49m[39m [######............................................................................................] 8Unpacking xml-core (0.18+nmu1) ...
+Selecting previously unselected package docutils-common.
+Preparing to unpack .../07-docutils-common_0.16+dfsg-2_all.deb ...
+7[30;0f[42m[30mProgress: [  7%][49m[39m [#######...........................................................................................] 8Unpacking docutils-common (0.16+dfsg-2) ...
+Selecting previously unselected package python3-docopt.
+Preparing to unpack .../08-python3-docopt_0.6.2-2.2ubuntu1_all.deb ...
+7[30;0f[42m[30mProgress: [  8%][49m[39m [########..........................................................................................] 8Unpacking python3-docopt (0.6.2-2.2ubuntu1) ...
+Selecting previously unselected package python3-feedparser.
+Preparing to unpack .../09-python3-feedparser_5.2.1-2_all.deb ...
+7[30;0f[42m[30mProgress: [  9%][49m[39m [#########.........................................................................................] 8Unpacking python3-feedparser (5.2.1-2) ...
+Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../10-libjs-jquery_3.3.1~dfsg-3_all.deb ...
+7[30;0f[42m[30mProgress: [ 10%][49m[39m [##########........................................................................................] 8Unpacking libjs-jquery (3.3.1~dfsg-3) ...
+Selecting previously unselected package libjs-underscore.
+Preparing to unpack .../11-libjs-underscore_1.9.1~dfsg-1ubuntu0.20.04.1_all.deb ...
+7[30;0f[42m[30mProgress: [ 11%][49m[39m [##########........................................................................................] 8Unpacking libjs-underscore (1.9.1~dfsg-1ubuntu0.20.04.1) ...
+Selecting previously unselected package libjs-sphinxdoc.
+Preparing to unpack .../12-libjs-sphinxdoc_1.8.5-7ubuntu3_all.deb ...
+7[30;0f[42m[30mProgress: [ 12%][49m[39m [###########.......................................................................................] 8Unpacking libjs-sphinxdoc (1.8.5-7ubuntu3) ...
+Selecting previously unselected package sphinx-common.
+Preparing to unpack .../13-sphinx-common_1.8.5-7ubuntu3_all.deb ...
+7[30;0f[42m[30mProgress: [ 13%][49m[39m [############......................................................................................] 8Unpacking sphinx-common (1.8.5-7ubuntu3) ...
+Selecting previously unselected package python3-alabaster.
+Preparing to unpack .../14-python3-alabaster_0.7.8-1build1_all.deb ...
+7[30;0f[42m[30mProgress: [ 14%][49m[39m [#############.....................................................................................] 8Unpacking python3-alabaster (0.7.8-1build1) ...
+Selecting previously unselected package python-babel-localedata.
+Preparing to unpack .../15-python-babel-localedata_2.6.0+dfsg.1-1ubuntu2.2_all.deb ...
+7[30;0f[42m[30mProgress: [ 15%][49m[39m [##############....................................................................................] 8Unpacking python-babel-localedata (2.6.0+dfsg.1-1ubuntu2.2) ...
+Selecting previously unselected package python3-tz.
+Preparing to unpack .../16-python3-tz_2019.3-1_all.deb ...
+7[30;0f[42m[30mProgress: [ 16%][49m[39m [###############...................................................................................] 8Unpacking python3-tz (2019.3-1) ...
+Selecting previously unselected package python3-babel.
+Preparing to unpack .../17-python3-babel_2.6.0+dfsg.1-1ubuntu2.2_all.deb ...
+7[30;0f[42m[30mProgress: [ 17%][49m[39m [################..................................................................................] 8Unpacking python3-babel (2.6.0+dfsg.1-1ubuntu2.2) ...
+Selecting previously unselected package python3-roman.
+Preparing to unpack .../18-python3-roman_2.0.0-3build1_all.deb ...
+7[30;0f[42m[30mProgress: [ 18%][49m[39m [#################.................................................................................] 8Unpacking python3-roman (2.0.0-3build1) ...
+Selecting previously unselected package python3-docutils.
+Preparing to unpack .../19-python3-docutils_0.16+dfsg-2_all.deb ...
+7[30;0f[42m[30mProgress: [ 19%][49m[39m [##################................................................................................] 8Unpacking python3-docutils (0.16+dfsg-2) ...
+Selecting previously unselected package python3-imagesize.
+Preparing to unpack .../20-python3-imagesize_1.2.0-1_all.deb ...
+7[30;0f[42m[30mProgress: [ 20%][49m[39m [###################...............................................................................] 8Unpacking python3-imagesize (1.2.0-1) ...
+Selecting previously unselected package python3-pyparsing.
+Preparing to unpack .../21-python3-pyparsing_2.4.6-1_all.deb ...
+Unpacking python3-pyparsing (2.4.6-1) ...
+7[30;0f[42m[30mProgress: [ 21%][49m[39m [#####################.............................................................................] 8Selecting previously unselected package python3-packaging.
+Preparing to unpack .../22-python3-packaging_20.3-1_all.deb ...
+Unpacking python3-packaging (20.3-1) ...
+7[30;0f[42m[30mProgress: [ 22%][49m[39m [#####################.............................................................................] 8Selecting previously unselected package python3-pygments.
+Preparing to unpack .../23-python3-pygments_2.3.1+dfsg-1ubuntu2.2_all.deb ...
+Unpacking python3-pygments (2.3.1+dfsg-1ubuntu2.2) ...
+7[30;0f[42m[30mProgress: [ 23%][49m[39m [######################............................................................................] 8Selecting previously unselected package python3-sphinx.
+Preparing to unpack .../24-python3-sphinx_1.8.5-7ubuntu3_all.deb ...
+Unpacking python3-sphinx (1.8.5-7ubuntu3) ...
+7[30;0f[42m[30mProgress: [ 24%][49m[39m [#######################...........................................................................] 8Selecting previously unselected package python3-numpydoc.
+Preparing to unpack .../25-python3-numpydoc_0.7.0-2_all.deb ...
+Unpacking python3-numpydoc (0.7.0-2) ...
+7[30;0f[42m[30mProgress: [ 25%][49m[39m [########################..........................................................................] 8Selecting previously unselected package python3-ply.
+Preparing to unpack .../26-python3-ply_3.11-3ubuntu0.1_all.deb ...
+Unpacking python3-ply (3.11-3ubuntu0.1) ...
+7[30;0f[42m[30mProgress: [ 26%][49m[39m [#########################.........................................................................] 8Selecting previously unselected package python3-wcwidth.
+Preparing to unpack .../27-python3-wcwidth_0.1.8+dfsg1-3_all.deb ...
+Unpacking python3-wcwidth (0.1.8+dfsg1-3) ...
+7[30;0f[42m[30mProgress: [ 27%][49m[39m [##########################........................................................................] 8Selecting previously unselected package python3-prompt-toolkit.
+Preparing to unpack .../28-python3-prompt-toolkit_2.0.10-2_all.deb ...
+Unpacking python3-prompt-toolkit (2.0.10-2) ...
+7[30;0f[42m[30mProgress: [ 28%][49m[39m [###########################.......................................................................] 8Selecting previously unselected package python3-sigmavirus24-urltemplate.
+Preparing to unpack .../29-python3-sigmavirus24-urltemplate_3.0.1-1_all.deb ...
+Unpacking python3-sigmavirus24-urltemplate (3.0.1-1) ...
+7[30;0f[42m[30mProgress: [ 29%][49m[39m [############################......................................................................] 8Selecting previously unselected package python-pip-whl.
+Preparing to unpack .../30-python-pip-whl_20.0.2-5ubuntu1.6_all.deb ...
+Unpacking python-pip-whl (20.0.2-5ubuntu1.6) ...
+7[30;0f[42m[30mProgress: [ 30%][49m[39m [#############################.....................................................................] 8Selecting previously unselected package python3.8-venv.
+Preparing to unpack .../31-python3.8-venv_3.8.10-0ubuntu1~20.04.2_amd64.deb ...
+Unpacking python3.8-venv (3.8.10-0ubuntu1~20.04.2) ...
+7[30;0f[42m[30mProgress: [ 31%][49m[39m [##############################....................................................................] 8Selecting previously unselected package python3-venv.
+Preparing to unpack .../32-python3-venv_3.8.2-0ubuntu2_amd64.deb ...
+Unpacking python3-venv (3.8.2-0ubuntu2) ...
+7[30;0f[42m[30mProgress: [ 32%][49m[39m [###############################...................................................................] 8Selecting previously unselected package xonsh.
+Preparing to unpack .../33-xonsh_0.9.13+dfsg-2_all.deb ...
+Unpacking xonsh (0.9.13+dfsg-2) ...
+7[30;0f[42m[30mProgress: [ 33%][49m[39m [################################..................................................................] 8Selecting previously unselected package gitsome.
+Preparing to unpack .../34-gitsome_0.8.0+ds-4_all.deb ...
+Unpacking gitsome (0.8.0+ds-4) ...
+7[30;0f[42m[30mProgress: [ 34%][49m[39m [#################################.................................................................] 8Selecting previously unselected package javascript-common.
+Preparing to unpack .../35-javascript-common_11_all.deb ...
+Unpacking javascript-common (11) ...
+7[30;0f[42m[30mProgress: [ 35%][49m[39m [##################################................................................................] 8Selecting previously unselected package libimagequant0:amd64.
+Preparing to unpack .../36-libimagequant0_2.12.2-1.1_amd64.deb ...
+Unpacking libimagequant0:amd64 (2.12.2-1.1) ...
+7[30;0f[42m[30mProgress: [ 36%][49m[39m [###################################...............................................................] 8Selecting previously unselected package libjpeg-turbo8:amd64.
+Preparing to unpack .../37-libjpeg-turbo8_2.0.3-0ubuntu1.20.04.1_amd64.deb ...
+Unpacking libjpeg-turbo8:amd64 (2.0.3-0ubuntu1.20.04.1) ...
+7[30;0f[42m[30mProgress: [ 37%][49m[39m [####################################..............................................................] 8Selecting previously unselected package libjpeg8:amd64.
+Preparing to unpack .../38-libjpeg8_8c-2ubuntu8_amd64.deb ...
+Unpacking libjpeg8:amd64 (8c-2ubuntu8) ...
+7[30;0f[42m[30mProgress: [ 38%][49m[39m [#####################################.............................................................] 8Selecting previously unselected package liblcms2-2:amd64.
+Preparing to unpack .../39-liblcms2-2_2.9-4_amd64.deb ...
+Unpacking liblcms2-2:amd64 (2.9-4) ...
+7[30;0f[42m[30mProgress: [ 39%][49m[39m [######################################............................................................] 8Selecting previously unselected package libpaper1:amd64.
+Preparing to unpack .../40-libpaper1_1.1.28_amd64.deb ...
+Unpacking libpaper1:amd64 (1.1.28) ...
+7[30;0f[42m[30mProgress: [ 40%][49m[39m [#######################################...........................................................] 8Selecting previously unselected package libpaper-utils.
+Preparing to unpack .../41-libpaper-utils_1.1.28_amd64.deb ...
+Unpacking libpaper-utils (1.1.28) ...
+Selecting previously unselected package libjbig0:amd64.
+Preparing to unpack .../42-libjbig0_2.1-3.1build1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 41%][49m[39m [########################################..........................................................] 8Unpacking libjbig0:amd64 (2.1-3.1build1) ...
+Selecting previously unselected package libwebp6:amd64.
+Preparing to unpack .../43-libwebp6_0.6.1-2ubuntu0.20.04.1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 42%][49m[39m [#########################################.........................................................] 8Unpacking libwebp6:amd64 (0.6.1-2ubuntu0.20.04.1) ...
+Selecting previously unselected package libtiff5:amd64.
+Preparing to unpack .../44-libtiff5_4.1.0+git191117-2ubuntu0.20.04.2_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 43%][49m[39m [##########################################........................................................] 8Unpacking libtiff5:amd64 (4.1.0+git191117-2ubuntu0.20.04.2) ...
+Selecting previously unselected package libwebpdemux2:amd64.
+Preparing to unpack .../45-libwebpdemux2_0.6.1-2ubuntu0.20.04.1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 44%][49m[39m [###########################################.......................................................] 8Unpacking libwebpdemux2:amd64 (0.6.1-2ubuntu0.20.04.1) ...
+Selecting previously unselected package libwebpmux3:amd64.
+Preparing to unpack .../46-libwebpmux3_0.6.1-2ubuntu0.20.04.1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 45%][49m[39m [############################################......................................................] 8Unpacking libwebpmux3:amd64 (0.6.1-2ubuntu0.20.04.1) ...
+Selecting previously unselected package make.
+Preparing to unpack .../47-make_4.2.1-1.2_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 46%][49m[39m [#############################################.....................................................] 8Unpacking make (4.2.1-1.2) ...
+Selecting previously unselected package python3-olefile.
+Preparing to unpack .../48-python3-olefile_0.46-2_all.deb ...
+7[30;0f[42m[30mProgress: [ 47%][49m[39m [##############################################....................................................] 8Unpacking python3-olefile (0.46-2) ...
+Selecting previously unselected package python3-pil:amd64.
+Preparing to unpack .../49-python3-pil_7.0.0-4ubuntu0.5_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 48%][49m[39m [###############################################...................................................] 8Unpacking python3-pil:amd64 (7.0.0-4ubuntu0.5) ...
+Selecting previously unselected package python3-setproctitle:amd64.
+Preparing to unpack .../50-python3-setproctitle_1.1.10-1ubuntu1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 49%][49m[39m [################################################..................................................] 8Unpacking python3-setproctitle:amd64 (1.1.10-1ubuntu1) ...
+Setting up javascript-common (11) ...
+7[30;0f[42m[30mProgress: [ 50%][49m[39m [#################################################.................................................] 8Setting up python3-feedparser (5.2.1-2) ...
+7[30;0f[42m[30mProgress: [ 51%][49m[39m [##################################################................................................] 8Setting up liblcms2-2:amd64 (2.9-4) ...
+7[30;0f[42m[30mProgress: [ 52%][49m[39m [###################################################...............................................] 8Setting up libpaper1:amd64 (1.1.28) ...
+7[30;0f[42m[30mProgress: [ 53%][49m[39m [####################################################..............................................] 8
+Creating config file /etc/papersize with new version
+Setting up python3-docopt (0.6.2-2.2ubuntu1) ...
+7[30;0f[42m[30mProgress: [ 54%][49m[39m [#####################################################.............................................] 8Setting up libpython3.8-minimal:amd64 (3.8.10-0ubuntu1~20.04.2) ...
+7[30;0f[42m[30mProgress: [ 55%][49m[39m [######################################################............................................] 8Setting up python3-alabaster (0.7.8-1build1) ...
+7[30;0f[42m[30mProgress: [ 56%][49m[39m [######################################################............................................] 8Setting up python3-olefile (0.46-2) ...
+7[30;0f[42m[30mProgress: [ 57%][49m[39m [#######################################################...........................................] 8Setting up python3-ply (3.11-3ubuntu0.1) ...
+7[30;0f[42m[30mProgress: [ 58%][49m[39m [########################################################..........................................] 8Setting up python3-sigmavirus24-urltemplate (3.0.1-1) ...
+7[30;0f[42m[30mProgress: [ 59%][49m[39m [#########################################################.........................................] 8Setting up libpaper-utils (1.1.28) ...
+7[30;0f[42m[30mProgress: [ 60%][49m[39m [##########################################################........................................] 8Setting up libjbig0:amd64 (2.1-3.1build1) ...
+7[30;0f[42m[30mProgress: [ 61%][49m[39m [############################################################......................................] 8Setting up python3-tz (2019.3-1) ...
+7[30;0f[42m[30mProgress: [ 62%][49m[39m [#############################################################.....................................] 8Setting up python-babel-localedata (2.6.0+dfsg.1-1ubuntu2.2) ...
+7[30;0f[42m[30mProgress: [ 63%][49m[39m [##############################################################....................................] 8Setting up python3-roman (2.0.0-3build1) ...
+7[30;0f[42m[30mProgress: [ 64%][49m[39m [###############################################################...................................] 8Setting up python3-pygments (2.3.1+dfsg-1ubuntu2.2) ...
+7[30;0f[42m[30mProgress: [ 65%][49m[39m [################################################################..................................] 8Setting up python3-wcwidth (0.1.8+dfsg1-3) ...
+7[30;0f[42m[30mProgress: [ 66%][49m[39m [#################################################################.................................] 8Setting up python3-pyparsing (2.4.6-1) ...
+7[30;0f[42m[30mProgress: [ 67%][49m[39m [#################################################################.................................] 8Setting up make (4.2.1-1.2) ...
+7[30;0f[42m[30mProgress: [ 68%][49m[39m [##################################################################................................] 8Setting up libimagequant0:amd64 (2.12.2-1.1) ...
+7[30;0f[42m[30mProgress: [ 69%][49m[39m [###################################################################...............................] 8Setting up python3-setproctitle:amd64 (1.1.10-1ubuntu1) ...
+7[30;0f[42m[30mProgress: [ 70%][49m[39m [####################################################################..............................] 8Setting up libwebp6:amd64 (0.6.1-2ubuntu0.20.04.1) ...
+7[30;0f[42m[30mProgress: [ 71%][49m[39m [#####################################################################.............................] 8Setting up libjpeg-turbo8:amd64 (2.0.3-0ubuntu1.20.04.1) ...
+7[30;0f[42m[30mProgress: [ 72%][49m[39m [######################################################################............................] 8Setting up python3.8-minimal (3.8.10-0ubuntu1~20.04.2) ...
+7[30;0f[42m[30mProgress: [ 73%][49m[39m [#######################################################################...........................] 8Setting up sgml-base (1.29.1) ...
+7[30;0f[42m[30mProgress: [ 74%][49m[39m [########################################################################..........................] 8Setting up python-pip-whl (20.0.2-5ubuntu1.6) ...
+7[30;0f[42m[30mProgress: [ 75%][49m[39m [#########################################################################.........................] 8Setting up libjs-jquery (3.3.1~dfsg-3) ...
+7[30;0f[42m[30mProgress: [ 76%][49m[39m [##########################################################################........................] 8Setting up libpython3.8-stdlib:amd64 (3.8.10-0ubuntu1~20.04.2) ...
+7[30;0f[42m[30mProgress: [ 77%][49m[39m [###########################################################################.......................] 8Setting up python3.8 (3.8.10-0ubuntu1~20.04.2) ...
+7[30;0f[42m[30mProgress: [ 78%][49m[39m [############################################################################......................] 8Setting up libwebpmux3:amd64 (0.6.1-2ubuntu0.20.04.1) ...
+7[30;0f[42m[30mProgress: [ 79%][49m[39m [#############################################################################.....................] 8Setting up libjs-underscore (1.9.1~dfsg-1ubuntu0.20.04.1) ...
+7[30;0f[42m[30mProgress: [ 80%][49m[39m [##############################################################################....................] 8Setting up python3-imagesize (1.2.0-1) ...
+Setting up libjpeg8:amd64 (8c-2ubuntu8) ...
+7[30;0f[42m[30mProgress: [ 81%][49m[39m [###############################################################################...................] 8Setting up python3-prompt-toolkit (2.0.10-2) ...
+7[30;0f[42m[30mProgress: [ 82%][49m[39m [################################################################################..................] 8Setting up python3-babel (2.6.0+dfsg.1-1ubuntu2.2) ...
+7[30;0f[42m[30mProgress: [ 83%][49m[39m [#################################################################################.................] 8update-alternatives: using /usr/bin/pybabel-python3 to provide /usr/bin/pybabel (pybabel) in auto mode
+Setting up libwebpdemux2:amd64 (0.6.1-2ubuntu0.20.04.1) ...
+7[30;0f[42m[30mProgress: [ 84%][49m[39m [##################################################################################................] 8Setting up python3-packaging (20.3-1) ...
+7[30;0f[42m[30mProgress: [ 85%][49m[39m [###################################################################################...............] 8Setting up libpython3.8:amd64 (3.8.10-0ubuntu1~20.04.2) ...
+7[30;0f[42m[30mProgress: [ 86%][49m[39m [####################################################################################..............] 8Setting up python3.8-venv (3.8.10-0ubuntu1~20.04.2) ...
+7[30;0f[42m[30mProgress: [ 87%][49m[39m [#####################################################################################.............] 8Setting up libjs-sphinxdoc (1.8.5-7ubuntu3) ...
+7[30;0f[42m[30mProgress: [ 88%][49m[39m [######################################################################################............] 8Setting up xml-core (0.18+nmu1) ...
+Setting up libtiff5:amd64 (4.1.0+git191117-2ubuntu0.20.04.2) ...
+7[30;0f[42m[30mProgress: [ 89%][49m[39m [#######################################################################################...........] 8Setting up python3-pil:amd64 (7.0.0-4ubuntu0.5) ...
+7[30;0f[42m[30mProgress: [ 90%][49m[39m [########################################################################################..........] 8Setting up python3-venv (3.8.2-0ubuntu2) ...
+7[30;0f[42m[30mProgress: [ 91%][49m[39m [#########################################################################################.........] 8Setting up sphinx-common (1.8.5-7ubuntu3) ...
+7[30;0f[42m[30mProgress: [ 92%][49m[39m [##########################################################################################........] 8Setting up xonsh (0.9.13+dfsg-2) ...
+7[30;0f[42m[30mProgress: [ 93%][49m[39m [###########################################################################################.......] 8Processing triggers for mime-support (3.64ubuntu1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for shared-mime-info (1.15-1) ...
+Processing triggers for sgml-base (1.29.1) ...
+7[30;0f[42m[30mProgress: [ 94%][49m[39m [############################################################################################......] 8Setting up docutils-common (0.16+dfsg-2) ...
+Processing triggers for sgml-base (1.29.1) ...
+7[30;0f[42m[30mProgress: [ 95%][49m[39m [#############################################################################################.....] 8Setting up python3-docutils (0.16+dfsg-2) ...
+7[30;0f[42m[30mProgress: [ 96%][49m[39m [##############################################################################################....] 8update-alternatives: using /usr/share/docutils/scripts/python3/rst-buildhtml to provide /usr/bin/rst-buildhtml (rst-buildhtml) in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python3/rst2html to provide /usr/bin/rst2html (rst2html) in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python3/rst2html4 to provide /usr/bin/rst2html4 (rst2html4) in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python3/rst2html5 to provide /usr/bin/rst2html5 (rst2html5) in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python3/rst2latex to provide /usr/bin/rst2latex (rst2latex) in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python3/rst2man to provide /usr/bin/rst2man (rst2man) in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python3/rst2odt to provide /usr/bin/rst2odt (rst2odt) in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python3/rst2odt_prepstyles to provide /usr/bin/rst2odt_prepstyles (rst2odt_prepstyles) in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python3/rst2pseudoxml to provide /usr/bin/rst2pseudoxml (rst2pseudoxml) in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python3/rst2s5 to provide /usr/bin/rst2s5 (rst2s5) in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python3/rst2xetex to provide /usr/bin/rst2xetex (rst2xetex) in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python3/rst2xml to provide /usr/bin/rst2xml (rst2xml) in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python3/rstpep2html to provide /usr/bin/rstpep2html (rstpep2html) in auto mode
+Setting up python3-sphinx (1.8.5-7ubuntu3) ...
+7[30;0f[42m[30mProgress: [ 97%][49m[39m [###############################################################################################...] 8update-alternatives: using /usr/share/sphinx/scripts/python3/sphinx-apidoc to provide /usr/bin/sphinx-apidoc (sphinx-apidoc) in auto mode
+update-alternatives: using /usr/share/sphinx/scripts/python3/sphinx-autogen to provide /usr/bin/sphinx-autogen (sphinx-autogen) in auto mode
+update-alternatives: using /usr/share/sphinx/scripts/python3/sphinx-build to provide /usr/bin/sphinx-build (sphinx-build) in auto mode
+update-alternatives: using /usr/share/sphinx/scripts/python3/sphinx-quickstart to provide /usr/bin/sphinx-quickstart (sphinx-quickstart) in auto mode
+Setting up python3-numpydoc (0.7.0-2) ...
+7[30;0f[42m[30mProgress: [ 98%][49m[39m [################################################################################################..] 8Setting up gitsome (0.8.0+ds-4) ...
+7[30;0f[42m[30mProgress: [ 99%][49m[39m [#################################################################################################.] 8/usr/lib/python3/dist-packages/gitsome/github.py:792: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  ('/' + language if language is not 'overall' else '') +
+/usr/lib/python3/dist-packages/gitsome/lib/html2text/html2text.py:95: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if c is not ' ' and c is not '  ':
+/usr/lib/python3/dist-packages/gitsome/lib/html2text/html2text.py:95: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if c is not ' ' and c is not '  ':
+/usr/lib/python3/dist-packages/gitsome/lib/html2text/html2text.py:96: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  return c is ' '
+
+7[0;30r8[1A[J
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ 
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ sudo apt install gitsomegh issue --title "My issue" --body "Sample issue" --assignee @me
+Usage: gh issue [OPTIONS] USER_REPO_NUMBER
+Try "gh issue --help" for help.
+
+Error: no such option: --title
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ gh issue --title "My issue" --body "Sample issue" --assignee @me[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[40Psudo apt install gitsomegh issue --title "My issue" --body "Sample issue" --assignee @me[1@c[1@r[1@e[1@a[1@t[1@e[1@ 
+Usage: gh issue [OPTIONS] USER_REPO_NUMBER
+Try "gh issue --help" for help.
+
+Error: no such option: --title
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ gh issi[Kue --help
+Usage: gh issue [OPTIONS] USER_REPO_NUMBER
+
+  Output detailed information about the given issue.
+
+  Usage:     gh issue [user_repo_number]
+
+  Example(s):     gh issue donnemartin/saws/1
+
+  :type github: :class:`github.GitHub` :param github: An instance of
+  `github.GitHub`.
+
+  :type user_repo_number: str :param user_repo_number: The
+  user/repo/issue_number.
+
+Options:
+  --help  Show this message and exit.
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ gh issue --helpcreate --title "My issue" --body "Sample issue" --assignee @me[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+User Login: Ragul     Ragul-Ramdass
+Do you want to log in with a password [Y] or a personal access token [n]? [Y/n]: n
+Token: s
+[31mAuthentication error.[0m
+Update your credentials in ~/.gitsomeconfig or run:
+  gh configure[0m
+[31mAuthentication error.[0m
+Update your credentials in ~/.gitsomeconfig or run:
+  gh configure[0m
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ gh issue create [1P--helpcreate --title "My issue" --body "Sample issue" --assignee @me[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Usage: gh issue [OPTIONS] USER_REPO_NUMBER
+Try "gh issue --help" for help.
+
+Error: no such option: --title
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ gh isssue [K[K[K[Kue --hr[Kelp
+Usage: gh issue [OPTIONS] USER_REPO_NUMBER
+
+  Output detailed information about the given issue.
+
+  Usage:     gh issue [user_repo_number]
+
+  Example(s):     gh issue donnemartin/saws/1
+
+  :type github: :class:`github.GitHub` :param github: An instance of
+  `github.GitHub`.
+
+  :type user_repo_number: str :param user_repo_number: The
+  user/repo/issue_number.
+
+Options:
+  --help  Show this message and exit.
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ ls[K[Kit s[K[K[K[Kgit statis[K[Kus
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git branch
+[?1h=* [32mmaster[m[m
+  testing[m[m
+[K[?1l>]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git checkout [K[K[K[K[K[K[K[K[K[K[K[K[Kgit checkout
+Your branch is up to date with 'origin/master'.
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git checkout testing
+Switched to branch 'testing'
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ it checlout[K[K[K[K[K[K[K[K[K[K[Kgo[Ko[Kit checkout master README.md
+error: pathspec 'README.md' did not match any file(s) known to git
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git checkout master README.md[1P README.md[1P README.md[1P README.md[1P README.mdi README.mdn README.md
+error: pathspec 'main' did not match any file(s) known to git
+error: pathspec 'README.md' did not match any file(s) known to git
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git checkout main README.md[K[K[K[K[K[K[K[K[K[K[K[Kster[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+file1.txt
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ g[Kgit add. [K[K .
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ f[Kgit commit -m ""n"e" "w"[1P"[1P"w" "b"r"a"n"c"h"
+On branch testing
+nothing to commit, working tree clean
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git push -u origin mastter[K[K[Ker
+Username for 'https://github.com': Raul  gul-Rams dass
+Password for 'https://Ragul-Ramdass@github.com': 
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Everything up-to-date
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git push -u origin mastercommit -m "new branch"add .[Kls[K[K[Kgit sttu[K[Kar[Ktus
+On branch testing
+nothing to commit, working tree clean
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ ls
+file1.txt
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ touch file2.txt
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ touch file2.txtls[Kgit statuspush -u origin mastercommit -m "new branch"add .[K
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git add .[Kgit add .touch file2.txtls[Ktouch file2.txt[6Pgit add .[Kgit add .touch file2.txtls[Kgit statuspush -u origin mastercommit -m "new branch"
+[testing 54c3ebf] new branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file2.txt
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git commit -m "new branch"add .[Ktouch file2.txt[6Pgit add .commit -m "new branch"[Kgit commit -m "new branch"add .[Ktouch file2.txtls[Kgit statuspush -u origin master[K[K[K[K[K[Ktestn[King
+Username for 'https://github.com': Ragul-Ramdass
+Password for 'https://Ragul-Ramdass@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/ragul-Ramdass/sample.git/'
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git push -u origin testingcommit -m "new branch"add .[Kcommit -m "new branch"add .[Ktouch file2.txt[6Pgit add .commit -m "new branch"push -u origin testing[Kgit push -u origin testing
+Username for 'https://github.com': Ragul-Ramdass
+Password for 'https://Ragul-Ramdass@github.com': 
+Enumerating objects: 4, done.
+Counting objects:  25% (1/4)Counting objects:  50% (2/4)Counting objects:  75% (3/4)Counting objects: 100% (4/4)Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 279 bytes | 139.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: This repository moved. Please use the new location:[K
+remote:   https://github.com/Ragul-Ramdass/sample.git[K
+remote: 
+remote: Create a pull request for 'testing' on GitHub by visiting:[K
+remote:      https://github.com/Ragul-Ramdass/sample/pull/new/testing[K
+remote: 
+To https://github.com/ragul-Ramdass/sample.git
+ * [new branch]      testing -> testing
+Branch 'testing' set up to track remote branch 'testing' from 'origin'.
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git [K[K[K[Kgit status
+On branch testing
+Your branch is up to date with 'origin/testing'.
+
+nothing to commit, working tree clean
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git branch
+[?1h=  master[m[m
+* [32mtesting[m[m
+[K[?1l>]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ it mer[K[K[K[K[K[Kgit mere m[K[K[K[K[K[Kcheckout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ it merge [1@g[C[C[C[C[C[C[C[C[C t e t [1P s t i n g 
+Updating 275f292..54c3ebf
+Fast-forward
+ file2.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file2.txt
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ ls
+file1.txt  file2.txt
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ i[Kgit[K[K[Kgit add .
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git commit -m ""t"e"s"t"i"n"g" "b"r"a"n"c"h" "f"i"l"e" "i"s" "a"d"d"e"d"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git push -u origin master[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kbranch -d testing
+Deleted branch testing (was 54c3ebf).
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git commit -m ""t"e"s"t"i"n"g" "b"r"a"n"c"h" "i"s" "d"e"l"e"t"e"d"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git push -u origin master
+Username for 'https://github.com': Ragu    Ragul-Ramdass
+Password for 'https://Ragul-Ramdass@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/ragul-Ramdass/sample.git/'
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git push -u origin master
+Username for 'https://github.com': Ragul-Ramdass
+Password for 'https://Ragul-Ramdass@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+remote: This repository moved. Please use the new location:[K
+remote:   https://github.com/Ragul-Ramdass/sample.git[K
+To https://github.com/ragul-Ramdass/sample.git
+   275f292..54c3ebf  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git push origin --delete testing
+Username for 'https://github.com': Ragul-Ramdass
+Password for 'https://Ragul-Ramdass@github.com': 
+remote: This repository moved. Please use the new location:[K
+remote:   https://github.com/Ragul-Ramdass/sample.git[K
+To https://github.com/ragul-Ramdass/sample.git
+ - [deleted]         testing
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git [K[K[Kh issue create --tile[K[Ktle ""M"y" "s"[1P"i"i"s"u"e"[1Psue"[1Psue"nsue"esue"wsue" sue"isue"[Csue"[Csue"usue"esue"[1Psue"[1Psue"[1Pue"[C[C[C "[1P"[C --"[Kbody ""D"e"s"c"r"i"p"t"i"o"n" "o"f" "i"s"s"u"e"
+Usage: gh issue [OPTIONS] USER_REPO_NUMBER
+Try "gh issue --help" for help.
+
+Error: no such option: --title
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ touch README>[K.md
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ echo ""h"e"l"l"o" "m"o"d"i"f"i"e"d" "r"e"a"d"m"e"[C> >[C README.md
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ it add /[1@g[C[C[C[C[C[C[C[C[K.
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git commit =[K-m ""R"e"a"d"m"e" "u"p"d"a"t"e"d"
+[master ed3173e] Readme updated
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ it ush /[C[1P /[1P /[1P /[1P/[1P /[1P /g /i /t /[C /p /u /s /h /[C /- /u /[C /o /r /i /g /i /n /[C /m /a /s /t /e /r /[C[C[K
+Username for 'https://github.com': Ragul  -Ramdass
+Password for 'https://Ragul-Ramdass@github.com': 
+Enumerating objects: 4, done.
+Counting objects:  25% (1/4)Counting objects:  50% (2/4)Counting objects:  75% (3/4)Counting objects: 100% (4/4)Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 338 bytes | 112.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: This repository moved. Please use the new location:[K
+remote:   https://github.com/Ragul-Ramdass/sample.git[K
+To https://github.com/ragul-Ramdass/sample.git
+   54c3ebf..ed3173e  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git clone -b main sample[K[K[K[K[K[Khttps://github.com/Ragul-Ramdass/sample.git
+Cloning into 'sample'...
+Username for 'https://github.com': Raul-Ramdass
+Password for 'https://Raul-Ramdass@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/Ragul-Ramdass/sample.git/'
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git clone -b main https://github.com/Ragul-Ramdass/sample.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[35Ppush -u origin master clone -b main https://github.com/Ragul-Ramdass/sample.git
+Cloning into 'sample'...
+Username for 'https://github.com': Ragul-Rm amdass
+Password for 'https://Ragul-Ramdass@github.com': 
+fatal: unable to access 'https://github.com/Ragul-Ramdass/sample.git/': The requested URL returned error: 400
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ it [K[K[Kgit branch main master -f
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git checkout main
+Switched to branch 'main'
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ ls
+README.md  file1.txt  file2.txt
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git ush [1@p[C[C[C[C o r i g i n [C m a i n [C - f 
+Username for 'https://github.com': Ragul-Ramdass
+Password for 'https://Ragul-Ramdass@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ragul-Ramdass/sample.git/'
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git push origin main -f 
+Username for 'https://github.com': Fr  Ragul RA   -Ramdass
+Password for 'https://Ragul-Ramdass@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ragul-Ramdass/sample.git/'
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git push origin main -f 
+Username for 'https://github.com': Ragul-Ramdass
+Password for 'https://Ragul-Ramdass@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ragul-Ramdass/sample.git/'
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git push origin main -f 
+Username for 'https://github.com': Ragul-Ramdass
+Password for 'https://Ragul-Ramdass@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+remote: This repository moved. Please use the new location:[K
+remote:   https://github.com/Ragul-Ramdass/sample.git[K
+To https://github.com/ragul-Ramdass/sample.git
+ + de11f3c...ed3173e main -> main (forced update)
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git merge[K[K[K[K[Ks[Kstatus
+On branch main
+nothing to commit, working tree clean
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git merge master
+Already up to date.
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ echo ""!"!"[C >> file[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit s[Kcheckout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ echo "!!" >> REAd[KDME>M[K[K.md
+echo "git checkout master" >> README.md
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ nl README.md
+     1	hello modified readme
+     2	git checkout master
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ nl README.md[27@echo "git checkout master" >>[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit add .
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git commit
+hint: Waiting for your editor to close the file... [?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;52H(B[0;7m[ Read 10 lines ](B[m[H(B[0;7m  GNU nano 4.8                          /home/ragul_r/repository/.git/COMMIT_EDITMSG                                    [1;119H(B[m[29d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text[28d[3d[39;49m[36m# Please enter the commit message for your changes. Lines starting[4d# with '#' will be ignored, and an empty message aborts the commit.[5d#[6d# On branch master[7d# Your branch is up to date with 'origin/master'.[8d#[9d# Changes to be committed:[10d#       modified:   README.md[11d#[2d[39m(B[m[?12l[?25h[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[KAborting commit due to empty commit message.
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git commit -m ""R"E"a"[1P"[1P"[1P"[K[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[C[Knano README>md[K[K[K.md
+[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;53H(B[0;7m[ Read 2 lines ](B[m[H(B[0;7m  GNU nano 4.8                                           README.md                                                      [1;119H(B[m[29d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text[28d[2d[39;49m(B[mhello modified readme[3dgit checkout master[A[?12l[?25h[?25l[3d[?12l[?25h[?25l[1;111H(B[0;7mModified(B[m[3d[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25laster[K[?12l[?25h[?25lster[K[?12l[?25h[?25lter[K[?12l[?25h[?25ler[K[?12l[?25h[?25lr[K[?12l[?25h[?25l[K[?12l[?25h[?25l[2;22H[?12l[?25h[?25l![?12l[?25h[?25l![?12l[?25h[?25l[3d[?12l[?25h[?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Get Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m To Files[28d(B[0;7mFile Name to Write: README.md(B[m[28;30H[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;111H(B[0;7m        (B[m[28;52H(B[0;7m[ Wrote 2 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ nano README.md[4Pgit commit[1Padd .
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git add .nano README.md[4Pgit commit -m ""U"p"d"a"t"e"d" "R"E"a"d"[1P"[1P"[1P"e"a"d"m"e"
+[master 21672d5] Updated Readme
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git push - [Ku origin master
+Username for 'https://github.com': Raul-Ramdass
+Password for 'https://Raul-Ramdass@github.com': 
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 341 bytes | 170.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: This repository moved. Please use the new location:[K
+remote:   https://github.com/Ragul-Ramdass/sample.git[K
+To https://github.com/ragul-Ramdass/sample.git
+   ed3173e..21672d5  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git checkout main
+Switched to branch 'main'
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git merge master
+Updating ed3173e..21672d5
+Fast-forward
+ README.md | 3 [32m++[m[31m-[m
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git dele[K[K[K[Kbranch[K[K[K[K[K[K[K[K[K[Kgit commit -m ""A"m"[1P"[1P"M"a"s"t"e"r" "b"r"a"n"c"h" "m"e"r"g"e"r"[1P"d"
+On branch main
+nothing to commit, working tree clean
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git push -orih[Kgin main[1@u[1@ 
+Username for 'https://github.com': Ragul-RAmda    amdass
+Password for 'https://Ragul-Ramdass@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+remote: This repository moved. Please use the new location:[K
+remote:   https://github.com/Ragul-Ramdass/sample.git[K
+To https://github.com/ragul-Ramdass/sample.git
+   ed3173e..21672d5  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git brach de[K[K-d delete [K[K[K[K[K[K[1@n[C[C[C[C[C[C[C[Kmaster
+Deleted branch master (was 21672d5).
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ git[K[K[Kgit push origin --delet mastere master
+Username for 'https://github.com': Ragul-Ramdass
+Password for 'https://Ragul-Ramdass@github.com': 
+remote: This repository moved. Please use the new location:[K
+remote:   https://github.com/Ragul-Ramdass/sample.git[K
+To https://github.com/ragul-Ramdass/sample.git
+ - [deleted]         master
+]0;ragul_r@DESKTOP-CSI671E: ~/repository[01;32mragul_r@DESKTOP-CSI671E[00m:[01;34m~/repository[00m$ exit
+exit
+
+Script done on 2022-03-02 15:11:02+05:30 [COMMAND_EXIT_CODE="0"]
